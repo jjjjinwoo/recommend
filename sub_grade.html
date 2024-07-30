@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게임평점</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/sub_grade.css" />
+    <link rel="icon" href="./img/main/favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="header_con">
+          <!-- header_up -->
+          <div class="header_up">
+            <ul>
+              <li>
+                <a href="#" style="gap: 6px">
+                  <span>KOR</span>
+                  <img
+                    src="./img/main/triangle1.png"
+                    alt="triangle"
+                    style="margin-bottom: 3px"
+                  />
+                </a>
+              </li>
+              <div
+                style="display: flex; justify-content: flex-start; gap: 14px"
+              >
+                <li>
+                  <a href="sub_login.html"> LOGIN </a>
+                </li>
+                <li>
+                  <img
+                    src="./img/main/line 1.png"
+                    alt="line"
+                    style="margin-bottom: 2px"
+                  />
+                </li>
+                <li>
+                  <a href="sub_signup.html"> SIGNUP </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <!-- header_down -->
+          <div class="header_down">
+            <ul>
+              <h1>
+                <a href="index.html"
+                  ><img src="./img/main/LOGO.png" alt="logo"
+                /></a>
+              </h1>
+              <li class="hm">
+                <div class="text" style="margin-top: 3px">
+                  <a href="sub_news.html"> 뉴스 </a>
+                  <div class="line"></div>
+                  <ul class="sub_menu">
+                    <li><a href="sub_news.html">신작소개</a></li>
+                    <li><a href="sub_news.html">국내뉴스</a></li>
+                    <li><a href="sub_news.html">해외뉴스</a></li>
+                    <li><a href="sub_news.html">특집</a></li>
+                    <li><a href="sub_news.html">게임쇼</a></li>
+                    <li><a href="sub_news.html">게임순위</a></li>
+                  </ul>
+                </div>
+                <div class="text" style="margin-top: 3px">
+                  <a href="#"> 게임평점 </a>
+                  <div class="line"></div>
+                  <ul class="sub_menu" style="left: -15px">
+                    <li><a href="#">PS5</a></li>
+                    <li><a href="#">SWITCH</a></li>
+                    <li><a href="#">XBOX</a></li>
+                    <li><a href="#">PC</a></li>
+                    <li><a href="#">MOBILE</a></li>
+                  </ul>
+                </div>
+                <div class="text" style="margin-top: 3px">
+                  <a href="sub_community.html"> 커뮤니티 </a>
+                  <div class="line"></div>
+                  <ul class="sub_menu" style="left: -15px">
+                    <li><a href="sub_community.html">질문 게시판</a></li>
+                    <li><a href="sub_.html">자유 게시판</a></li>
+                    <li><a href="sub_community.html">커뮤니티</a></li>
+                    <li><a href="sub_community.html">스크린샷</a></li>
+                    <li><a href="sub_community.html">게임공략</a></li>
+                  </ul>
+                </div>
+                <div class="text" style="margin-top: 3px">
+                  <a href="sub_video.html"> 영상 </a>
+                  <div class="line"></div>
+                  <ul class="sub_menu">
+                    <li><a href="sub_video.html">인기영상</a></li>
+                    <li><a href="sub_video.html">방송클립</a></li>
+                    <li><a href="sub_video.html">게임영상</a></li>
+                  </ul>
+                </div>
+                <div style="margin-top: 3px">
+                  <img
+                    src="./img/main/line2.png"
+                    alt="line"
+                    style="margin-bottom: 2px"
+                  />
+                </div>
+                <div class="text" style="margin-top: 3px">
+                  <a href="#" id="게임추천"> 게임추천 </a>
+                  <div class="line"></div>
+                </div>
+                <div class="text" style="display: flex; gap: 15px">
+                  <div style="margin-top: 3px">
+                    <a href="#" id="핫딜"> 핫딜 </a>
+                    <div class="line"></div>
+                  </div>
+                  <img src="./img/main/new.png" alt="new" />
+                </div>
+                <div class="sub_box">
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </li>
+              <li
+                style="display: flex; justify-content: flex-start; gap: 18px"
+                class="icon"
+              >
+                <a class="icon_search" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="section1">
+          <div>
+            <a href="#">PS5</a>
+            <a href="#" class="hover">SWITCH</a>
+            <a href="#" class="hover">XBOX</a>
+            <a href="#" class="hover">PC</a>
+            <a href="#" class="hover">MOBILE</a>
+          </div>
+        </section>
+        <section class="section2">
+          <div class="title_s">
+            <div>
+              <h2>최근 발매한 게임</h2>
+              <p>*노란색 평점은 평론가 평점입니다.</p>
+            </div>
+            <div>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+          <div class="list">
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>오늘 발매!</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>1일전 발매!</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>4일전 발매!</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>4일전 발매!</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>7일전 발매!</span>
+            </div>
+          </div>
+          <div class="line"></div>
+        </section>
+        <section class="section3">
+          <div class="title_s">
+            <div>
+              <h2>전문가 Pick 게임</h2>
+            </div>
+            <div>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+          <div class="card_con">
+            <a href="#">
+              <div class="box">
+                <span>전문가평점</span>
+                <span>99</span>
+                <span>점</span>
+              </div>
+              <div class="name">
+                <h3>게임 타이틀 제목</h3>
+                <span>탐험과 전투의 진정한 매력을 경험하세요!</span>
+              </div>
+              <div class="black"></div>
+            </a>
+            <a href="#">
+              <div class="box">
+                <span>전문가평점</span>
+                <span>99</span>
+                <span>점</span>
+              </div>
+              <div class="name">
+                <h3>게임 타이틀 제목</h3>
+                <span>탐험과 전투의 진정한 매력을 경험하세요!</span>
+              </div>
+              <div class="black"></div>
+            </a>
+          </div>
+        </section>
+        <section class="section4">
+          <h3>RECOMMEND’s SUPER RECOMMEND</h3>
+          <p>그동안 리커맨드를 수상받은 게임들을 살펴보세요!</p>
+          <a href="#">수상작 보러가기</a>
+        </section>
+        <section class="section5">
+          <div class="title_s">
+            <div>
+              <h2>전체 게임</h2>
+              <p>*노란색 평점은 평론가 평점입니다.</p>
+            </div>
+          </div>
+          <div class="search">
+            <form action="#" method="post" name="search">
+              <input
+                id="search_name"
+                name="search_name"
+                placeholder="게임 제목을 입력해주세요."
+                required
+              />
+              <input id="search_btn" type="submit" />
+            </form>
+            <div class="sort">
+              <button>최신순</button>
+              <button>오래된순</button>
+              <button>평점높은순</button>
+              <button>평점낮은순</button>
+            </div>
+          </div>
+          <div class="list">
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+            <div class="card_con">
+              <a class="image" href="#"></a>
+              <a class="name" href="#">게임 타이틀 제목</a>
+              <span>24.7.4</span>
+            </div>
+          </div>
+          <div class="pagination">
+            <a href="#"></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#"></a>
+          </div>
+        </section>
+        <section class="section6">
+          <a href="#">
+            <img src="./img/sub/grade/ad.png" alt="광고배너" />
+          </a>
+        </section>
+      </main>
+      <footer>
+        <nav class="up">
+          <ul>
+            <li><a href="#">개인정보처리취급방침</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">제휴문의</a></li>
+            <li><a href="#">광고안내</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+          <div class="sns">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+        </nav>
+        <div class="down">
+          <div class="left">
+            <div>
+              <img src="./img/main/footer_logo.png" alt="footer_logo" />
+            </div>
+            <p>
+              법인명: 리커맨드 | 주소: 경기 안양시 만안구 안양로 336 금강빌딩
+              8층 이젠아카데미컴퓨터학원<br />
+              대표이사: 박진우 | 사업자등록번호: 123-45-67890 | 통신판매업신고:
+              안양시 만안구 안양로 336<br />
+              이메일문의: somes03@naver.com | 이메일문의2: somes228@gmail.com<br />
+              리커맨드의 모든 콘텐츠는 무단 도용 시 법적인 제재를 받을 수
+              있습니다.<br /><br />
+              RECOMMEND ALL RIGHTS RESERVED.
+            </p>
+          </div>
+          <div class="right">
+            <div>
+              <a href="#">고객센터 바로가기</a>
+              <a href="#">1:1 문의 바로가기</a>
+            </div>
+            <span>고객센터 : 1544-1544</span>
+            <p>
+              전화문의 - 평일 9:00 ~ 18:00 / 점심시간 12:30 ~ 13:30 (
+              토,일및법정공휴일휴무 )
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECOMMEND</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./img/main/favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <nav class="header_con">
+          <!-- header_up -->
+          <div class="header_up">
+            <ul>
+              <li>
+                <a href="#" style="gap: 6px">
+                  <span>KOR</span>
+                  <img
+                    src="./img/main/triangle1.png"
+                    alt="triangle"
+                    style="margin-bottom: 3px"
+                  />
+                </a>
+              </li>
+              <div
+                style="display: flex; justify-content: flex-start; gap: 14px"
+              >
+                <li>
+                  <a href="sub_login.html"> LOGIN </a>
+                </li>
+                <li>
+                  <img
+                    src="./img/main/line 1.png"
+                    alt="line"
+                    style="margin-bottom: 2px"
+                  />
+                </li>
+                <li>
+                  <a href="sub_signup.html"> SIGNUP </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <!-- header_down -->
+          <div class="header_down">
+            <ul>
+              <h1>
+                <a href="#"><img src="./img/main/LOGO.png" alt="logo" /></a>
+              </h1>
+              <li class="hm">
+                <div class="text" style="margin-top: 3px">
+                  <a href="sub_news.html"> 뉴스 </a>
+                  <div class="line"></div>
+                  <ul class="sub_menu">
+                    <li><a href="sub_news.html">신작소개</a></li>
+                    <li><a href="sub_news.html">국내뉴스</a></li>
+                    <li><a href="sub_news.html">해외뉴스</a></li>
+                    <li><a href="sub_news.html">특집</a></li>
+                    <li><a href="sub_news.html">게임쇼</a></li>
+                    <li><a href="sub_news.html">게임순위</a></li>
+                  </ul>
+                </div>
+                <div class="text" style="margin-top: 3px">
+                  <a href="sub_grade.html"> 게임평점 </a>
+                  <div class="line"></div>
+                  <ul class="sub_menu" style="left: -15px">
+                    <li><a href="sub_grade.html">PS5</a></li>
+                    <li><a href="sub_grade.html">SWITCH</a></li>
+                    <li><a href="sub_grade.html">XBOX</a></li>
+                    <li><a href="sub_grade.html">PC</a></li>
+                    <li><a href="sub_grade.html">MOBILE</a></li>
+                  </ul>
+                </div>
+                <div class="text" style="margin-top: 3px">
+                  <a href="sub_community.html"> 커뮤니티 </a>
+                  <div class="line"></div>
+                  <ul class="sub_menu" style="left: -15px">
+                    <li><a href="sub_community.html">질문 게시판</a></li>
+                    <li><a href="sub_community.html">자유 게시판</a></li>
+                    <li><a href="sub_community.html">커뮤니티</a></li>
+                    <li><a href="sub_community.html">스크린샷</a></li>
+                    <li><a href="sub_community.html">게임공략</a></li>
+                  </ul>
+                </div>
+                <div class="text" style="margin-top: 3px">
+                  <a href="sub_video.html"> 영상 </a>
+                  <div class="line"></div>
+                  <ul class="sub_menu">
+                    <li><a href="sub_video.html">인기영상</a></li>
+                    <li><a href="sub_video.html">방송클립</a></li>
+                    <li><a href="sub_video.html">게임영상</a></li>
+                  </ul>
+                </div>
+                <div style="margin-top: 3px">
+                  <img
+                    src="./img/main/line2.png"
+                    alt="line"
+                    style="margin-bottom: 2px"
+                  />
+                </div>
+                <div class="text" style="margin-top: 3px">
+                  <a href="#" id="게임추천"> 게임추천 </a>
+                  <div class="line"></div>
+                </div>
+                <div class="text" style="display: flex; gap: 15px">
+                  <div style="margin-top: 3px">
+                    <a href="#" id="핫딜"> 핫딜 </a>
+                    <div class="line"></div>
+                  </div>
+                  <img src="./img/main/new.png" alt="new" />
+                </div>
+                <div class="sub_box">
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </li>
+              <li
+                style="display: flex; justify-content: flex-start; gap: 18px"
+                class="icon"
+              >
+                <a class="icon_search" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main style="position: relative">
+        <!-- section1 -->
+        <section class="section1">
+          <!-- bar -->
+          <div class="bar">
+            <div></div>
+            <div class="opacity"></div>
+            <div class="opacity"></div>
+            <div class="opacity"></div>
+            <div class="opacity"></div>
+          </div>
+          <!-- text -->
+          <div class="text">
+            <div class="up">
+              <a class="control" id="main_control1"></a>
+              <div class="number">
+                <span style="font-weight: bold; color: #ee0000">1</span>
+                <span>/</span>
+                <span>5</span>
+              </div>
+              <a class="control" id="main_control2"></a>
+              <span>국내뉴스</span>
+            </div>
+            <h2>
+              <a href="#"
+                >“조회수 3000만회” 슈퍼마리오 원더…<br />
+                이젠 한국이 ‘역수입’ 한다</a
+              >
+            </h2>
+          </div>
+          <!-- scroll_down -->
+          <div class="scroll_down">
+            <img
+              src="./img/main/scrolldown.png"
+              alt="scrolldown"
+              style="height: 320px"
+            />
+          </div>
+          <div class="img">
+            <div class="slide">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </div>
+          <button href="#" id="챗봇">챗봇 상담하기</button>
+        </section>
+        <!-- section2 -->
+        <section class="section2">
+          <div class="title">
+            <button type="button" class="prev">prev</button>
+            <h3><span style="color: #ee0000">새</span>로 나온 신작 게임</h3>
+            <button type="button" class="next">next</button>
+          </div>
+          <div class="card_con">
+            <div class="card">
+              <div class="box">
+                <img class="pick" src="./img/main/icon/pick.svg" alt="pick" />
+                <img class="game" src="./img/main/game/1.png" alt="game1" />
+              </div>
+              <div>
+                <div>
+                  <p class="sub_name">닌텐도스위치</p>
+                  <p class="name">모여봐요 동물의 숲</p>
+                </div>
+                <a href="#" class="view">VIEW</a>
+              </div>
+              <div>
+                <div class="score">
+                  <p>평점</p>
+                  <p>92</p>
+                </div>
+                <div class="line"></div>
+                <div class="score2_con">
+                  <div class="score2">
+                    <span>유저</span>
+                    <div class="bar"></div>
+                  </div>
+                  <div class="score2">
+                    <span>평론가</span>
+                    <div class="bar" id="critic_bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img class="game" src="./img/main/game/2.png" alt="game2" />
+              </div>
+              <div>
+                <div>
+                  <p class="sub_name">PS5 · XBOX</p>
+                  <p class="name">갓오브워:라그나로크</p>
+                </div>
+                <a href="#" class="view">VIEW</a>
+              </div>
+              <div>
+                <div class="score">
+                  <p>평점</p>
+                  <p>88</p>
+                </div>
+                <div class="line"></div>
+                <div class="score2_con">
+                  <div class="score2">
+                    <span>유저</span>
+                    <div class="bar"></div>
+                  </div>
+                  <div class="score2">
+                    <span>평론가</span>
+                    <div class="bar" id="critic_bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img class="game" src="./img/main/game/3.png" alt="game3" />
+              </div>
+              <div>
+                <div>
+                  <p class="sub_name">닌텐도스위치</p>
+                  <p class="name">젤다의 전설:야생의 숨결</p>
+                </div>
+                <a href="#" class="view">VIEW</a>
+              </div>
+              <div>
+                <div class="score">
+                  <p>평점</p>
+                  <p>70</p>
+                </div>
+                <div class="line"></div>
+                <div class="score2_con">
+                  <div class="score2">
+                    <span>유저</span>
+                    <div class="bar"></div>
+                  </div>
+                  <div class="score2">
+                    <span>평론가</span>
+                    <div class="bar" id="critic_bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img class="pick" src="./img/main/icon/pick.svg" alt="pick" />
+                <img class="game" src="./img/main/game/4.png" alt="game4" />
+              </div>
+              <div>
+                <div>
+                  <p class="sub_name">닌텐도스위치</p>
+                  <p class="name">슈퍼마리오 브라더스 원더</p>
+                </div>
+                <a href="#" class="view">VIEW</a>
+              </div>
+              <div>
+                <div class="score">
+                  <p>평점</p>
+                  <p>92</p>
+                </div>
+                <div class="line"></div>
+                <div class="score2_con">
+                  <div class="score2">
+                    <span>유저</span>
+                    <div class="bar"></div>
+                  </div>
+                  <div class="score2">
+                    <span>평론가</span>
+                    <div class="bar" id="critic_bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img class="game" src="./img/main/game/5.png" alt="game5" />
+              </div>
+              <div>
+                <div>
+                  <p class="sub_name">PS5 · XBOX</p>
+                  <p class="name">Grand Theft Auto5</p>
+                </div>
+                <a href="#" class="view">VIEW</a>
+              </div>
+              <div>
+                <div class="score">
+                  <p>평점</p>
+                  <p>92</p>
+                </div>
+                <div class="line"></div>
+                <div class="score2_con">
+                  <div class="score2">
+                    <span>유저</span>
+                    <div class="bar"></div>
+                  </div>
+                  <div class="score2">
+                    <span>평론가</span>
+                    <div class="bar" id="critic_bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blind"></div>
+          <div class="blind2"></div>
+        </section>
+        <!-- section3 -->
+        <section class="section3">
+          <div class="img"><img src="./img/main/sec3.png" alt="sec3_bg" /></div>
+          <div>
+            <span>이걸 어떻게 깨지?</span>
+            <h3>모두 함께 쓰는 게임 공략</h3>
+            <a href="#">
+              <div class="shortcut"></div>
+            </a>
+          </div>
+        </section>
+        <!-- section4 -->
+        <section class="section4">
+          <h3><span style="color: #0eb200">기</span>종별 게임 평점 보기</h3>
+          <div class="shortcut">
+            <a href="#"><i></i><span>닌텐도 스위치</span></a>
+            <a href="#"><i></i><span>PS5</span></a>
+            <a href="#"><i></i><span>XBOX</span></a>
+            <a href="#"><i></i><span>PC</span></a>
+            <a href="#"><i></i><span>모바일</span></a>
+            <a href="#"><i></i><span>더보기</span></a>
+          </div>
+        </section>
+        <!-- section5 -->
+        <section class="section5">
+          <div class="title">
+            <button type="button" class="prev">prev</button>
+            <h3>지금 뜨는 인기 영상</h3>
+            <button type="button" class="next">next</button>
+          </div>
+          <div class="card_con">
+            <a href="#">
+              <div class="img"></div>
+              <div class="name">
+                <h4>액토즈 '블러드라인', 게임 홍보 영상 대공개!</h4>
+                <span>12,000</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="img"></div>
+              <div class="name">
+                <h4>액토즈 '블러드라인', 게임 홍보 영상 대공개!</h4>
+                <span>12,000</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="img"></div>
+              <div class="name">
+                <h4>액토즈 '블러드라인', 게임 홍보 영상 대공개!</h4>
+                <span>12,000</span>
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- section6 -->
+        <section class="section6">
+          <div>
+            <h3><span style="color: #0021cd">자</span>유게시판 뜨는 게시물</h3>
+          </div>
+          <table>
+            <colgroup>
+              <col width="*" />
+              <col width="12%" />
+              <col width="14%" />
+            </colgroup>
+            <tr>
+              <td>
+                <a href="#">프린세스 메이커·에반게리온 만든 가이낙스 파산</a>
+              </td>
+              <td><a href="#">박나래</a></td>
+              <td>2024.06.10</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">[순정남] '국룰'을 어긴 게임 TOP 5</a>
+              </td>
+              <td><a href="#">기안84</a></td>
+              <td>2024.06.10</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">블리자드 “콜옵: 블랙 옵스 6 한국어 음성 없다”</a>
+              </td>
+              <td><a href="#">이시언</a></td>
+              <td>2024.06.10</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">전 단간론파 개발진 신작, 8월 스팀서 테스트</a>
+              </td>
+              <td><a href="#">전현무</a></td>
+              <td>2024.06.10</td>
+            </tr>
+          </table>
+        </section>
+        <!-- section7 -->
+        <section class="section7">
+          <a href="#"></a>
+        </section>
+        <section class="section8">
+          <span
+            ><span style="font-weight: 800">게임</span>에 관한 모든 것,
+          </span>
+          <img src="./img/main/recommend.svg" alt="text_logo" />
+          <div class="high"></div>
+        </section>
+        <div class="body_bg"></div>
+      </main>
+      <footer>
+        <nav class="up">
+          <ul>
+            <li><a href="#">개인정보처리취급방침</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">제휴문의</a></li>
+            <li><a href="#">광고안내</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+          <div class="sns">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+        </nav>
+        <div class="down">
+          <div class="left">
+            <div>
+              <img src="./img/main/footer_logo.png" alt="footer_logo" />
+            </div>
+            <p>
+              법인명: 리커맨드 | 주소: 경기 안양시 만안구 안양로 336 금강빌딩
+              8층 이젠아카데미컴퓨터학원<br />
+              대표이사: 박진우 | 사업자등록번호: 123-45-67890 | 통신판매업신고:
+              안양시 만안구 안양로 336<br />
+              이메일문의: somes03@naver.com | 이메일문의2: somes228@gmail.com<br />
+              리커맨드의 모든 콘텐츠는 무단 도용 시 법적인 제재를 받을 수
+              있습니다.<br /><br />
+              RECOMMEND ALL RIGHTS RESERVED.
+            </p>
+          </div>
+          <div class="right">
+            <div>
+              <a href="#">고객센터 바로가기</a>
+              <a href="#">1:1 문의 바로가기</a>
+            </div>
+            <span>고객센터 : 1544-1544</span>
+            <p>
+              전화문의 - 평일 9:00 ~ 18:00 / 점심시간 12:30 ~ 13:30 (
+              토,일및법정공휴일휴무 )
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영상</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/sub_video.css" />
+    <link rel="icon" href="./img/main/favicon.ico" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="header_con">
+        <!-- header_up -->
+        <div class="header_up">
+          <ul>
+            <li>
+              <a href="#" style="gap: 6px">
+                <span>KOR</span>
+                <img
+                  src="./img/main/triangle1.png"
+                  alt="triangle"
+                  style="margin-bottom: 3px"
+                />
+              </a>
+            </li>
+            <div style="display: flex; justify-content: flex-start; gap: 14px">
+              <li>
+                <a href="sub_login.html"> LOGIN </a>
+              </li>
+              <li>
+                <img
+                  src="./img/main/line 1.png"
+                  alt="line"
+                  style="margin-bottom: 2px"
+                />
+              </li>
+              <li>
+                <a href="sub_signup.html"> SIGNUP </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <!-- header_down -->
+        <div class="header_down">
+          <ul>
+            <h1>
+              <a href="index.html"
+                ><img src="./img/main/LOGO.png" alt="logo"
+              /></a>
+            </h1>
+            <li class="hm">
+              <div class="text" style="margin-top: 3px">
+                <a href="sub_news.html"> 뉴스 </a>
+                <div class="line"></div>
+                <ul class="sub_menu">
+                  <li><a href="sub_news.html">신작소개</a></li>
+                  <li><a href="sub_news.html">국내뉴스</a></li>
+                  <li><a href="sub_news.html">해외뉴스</a></li>
+                  <li><a href="sub_news.html">특집</a></li>
+                  <li><a href="sub_news.html">게임쇼</a></li>
+                  <li><a href="sub_news.html">게임순위</a></li>
+                </ul>
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="sub_grade.html"> 게임평점 </a>
+                <div class="line"></div>
+                <ul class="sub_menu" style="left: -15px">
+                  <li><a href="sub_grade.html">PS5</a></li>
+                  <li><a href="sub_grade.html">SWITCH</a></li>
+                  <li><a href="sub_grade.html">XBOX</a></li>
+                  <li><a href="sub_grade.html">PC</a></li>
+                  <li><a href="sub_grade.html">MOBILE</a></li>
+                </ul>
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="sub_community.html"> 커뮤니티 </a>
+                <div class="line"></div>
+                <ul class="sub_menu" style="left: -15px">
+                  <li><a href="sub_community.html">질문 게시판</a></li>
+                  <li><a href="sub_community.html">자유 게시판</a></li>
+                  <li><a href="sub_community.html">커뮤니티</a></li>
+                  <li><a href="sub_community.html">스크린샷</a></li>
+                  <li><a href="sub_community.html">게임공략</a></li>
+                </ul>
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="#"> 영상 </a>
+                <div class="line"></div>
+                <ul class="sub_menu">
+                  <li><a href="#">인기영상</a></li>
+                  <li><a href="#">방송클립</a></li>
+                  <li><a href="#">게임영상</a></li>
+                </ul>
+              </div>
+              <div style="margin-top: 3px">
+                <img
+                  src="./img/main/line2.png"
+                  alt="line"
+                  style="margin-bottom: 2px"
+                />
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="#" id="게임추천"> 게임추천 </a>
+                <div class="line"></div>
+              </div>
+              <div class="text" style="display: flex; gap: 15px">
+                <div style="margin-top: 3px">
+                  <a href="#" id="핫딜"> 핫딜 </a>
+                  <div class="line"></div>
+                </div>
+                <img src="./img/main/new.png" alt="new" />
+              </div>
+              <div class="sub_box">
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </li>
+            <li
+              style="display: flex; justify-content: flex-start; gap: 18px"
+              class="icon"
+            >
+              <a class="icon_search" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- section1 -->
+      <section class="section1">
+        <div class="title_s">
+          <h2>인기영상</h2>
+          <div>
+            <button></button>
+            <button></button>
+          </div>
+        </div>
+        <div class="card_con">
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">최강의 적과의 맞대결</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">환상적인 모험: 신비로운 세계 탐험기</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">팀워크가 승리의 열쇠</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">전설적인 보스와의 결전</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="line"></div>
+      <!-- section2 -->
+      <section class="section2">
+        <div class="title_s">
+          <h2>방송클립</h2>
+          <a href="#" class="more"></a>
+        </div>
+        <div class="card_con">
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">진정한 영웅이 되어라! 전쟁의 길을 걸어라</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">도전과 모험의 시작</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">험난한 여정의 시작</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">끝없는 전쟁</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+        </div>
+        <div class="card_con">
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">신비로운 유산: 숨겨진 보물을 찾아라</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">절대 놓치지 마세요! 최신 업데이트 소식</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">효과적인 전투 방법</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">전설적인 전투</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="line"></div>
+      <!-- section3 -->
+      <section class="section3">
+        <div class="title_s">
+          <h2>게임영상</h2>
+          <a href="#" class="more"></a>
+        </div>
+        <div class="card_con">
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">최고의 장비를 찾아라!</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">화려한 스킬의 연출</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">어둠의 심연</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">혼돈의 세계: 마법의 전투</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+        </div>
+        <div class="card_con">
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">새로운 전설의 탄생</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">신비의 모험</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">끊임없는 탐험의 길</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#" class="image"></a>
+            <a href="#">용의 전투: 불멸의 영웅들</a>
+            <div class="text_con">
+              <i></i>
+              <span>김땡땡</span>
+              <div></div>
+              <span>조회수</span>
+              <span>10만회</span>
+              <div></div>
+              <span>1개월 전</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <nav class="up">
+        <ul>
+          <li><a href="#">개인정보처리취급방침</a></li>
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">제휴문의</a></li>
+          <li><a href="#">광고안내</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">이용약관</a></li>
+        </ul>
+        <div class="sns">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </nav>
+      <div class="down">
+        <div class="left">
+          <div>
+            <img src="./img/main/footer_logo.png" alt="footer_logo" />
+          </div>
+          <p>
+            법인명: 리커맨드 | 주소: 경기 안양시 만안구 안양로 336 금강빌딩 8층
+            이젠아카데미컴퓨터학원<br />
+            대표이사: 박진우 | 사업자등록번호: 123-45-67890 | 통신판매업신고:
+            안양시 만안구 안양로 336<br />
+            이메일문의: somes03@naver.com | 이메일문의2: somes228@gmail.com<br />
+            리커맨드의 모든 콘텐츠는 무단 도용 시 법적인 제재를 받을 수
+            있습니다.<br /><br />
+            RECOMMEND ALL RIGHTS RESERVED.
+          </p>
+        </div>
+        <div class="right">
+          <div>
+            <a href="#">고객센터 바로가기</a>
+            <a href="#">1:1 문의 바로가기</a>
+          </div>
+          <span>고객센터 : 1544-1544</span>
+          <p>
+            전화문의 - 평일 9:00 ~ 18:00 / 점심시간 12:30 ~ 13:30 (
+            토,일및법정공휴일휴무 )
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

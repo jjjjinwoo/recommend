@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/sub_login.css" />
+    <link rel="icon" href="./img/main/favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <div class="logo">
+          <a href="index.html"><img src="./img/main/LOGO.png" alt="logo" /></a>
+        </div>
+        <div class="navi">
+          <a href="#">로그인</a>
+          <a href="sub_signup.html">회원가입</a>
+        </div>
+        <form action="#" method="post" name="member">
+          <div class="user_id">
+            <label for="user_id">아이디</label>
+            <input
+              type="text"
+              id="user_id"
+              name="user_id"
+              placeholder="아이디를 입력해주세요."
+            />
+          </div>
+          <div class="user_pw">
+            <label for="user_pw">비밀번호</label>
+            <input
+              type="password"
+              id="user_pw"
+              name="user_pw"
+              placeholder="비밀번호를 입력해주세요."
+            />
+          </div>
+          <div class="down">
+            <div>
+              <input type="checkbox" name="auto_login" id="auto_login" />
+              <label for="auto_login"></label>
+              <label>자동 로그인</label>
+            </div>
+            <div>
+              <a href="#">아이디 찾기</a>
+              <div class="line"></div>
+              <a href="#">비밀번호 찾기</a>
+            </div>
+          </div>
+          <input type="submit" value="작성완료" id="finish" />
+        </form>
+        <div class="sns">
+          <div>
+            <div class="line"></div>
+            <span>SNS 간편 로그인</span>
+            <div class="line"></div>
+          </div>
+          <div class="btn">
+            <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

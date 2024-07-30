@@ -1,0 +1,391 @@
+@charset "utf-8";
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* 공통 영역 */
+
+* {
+  margin: 0 auto;
+}
+body {
+  min-width: 1400px;
+  background-color: rgb(255, 255, 255);
+  font-family: "NanumSquare", sans-serif;
+  letter-spacing: -0.01em;
+  color: #222;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.title > a {
+  width: 36px;
+  height: 36px;
+  background-color: #ffca0f;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #222;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.title {
+  width: fit-content;
+  column-gap: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+.title > button {
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Header 영역 */
+
+header {
+  position: sticky;
+  top: 86px;
+  z-index: 999;
+}
+.header_con {
+  width: 100%;
+  height: 118px;
+  position: absolute;
+  z-index: 999;
+  top: -118px;
+}
+
+/* Header_up */
+
+.header_up {
+  width: 100%;
+  height: 32px;
+  background-color: #222;
+  padding: 0 160px;
+  box-sizing: border-box;
+}
+.header_up ul {
+  width: 100%;
+}
+.header_up li {
+  line-height: 32px;
+  font-size: 14px;
+}
+.header_up ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header_up a {
+  color: white;
+  transition: 0.3s;
+}
+.header_up a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Header_down */
+
+.header_down > ul {
+  width: 100%;
+  height: 86px;
+  background-color: rgba(255, 255, 255);
+  padding: 0 80px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_down .hm .text {
+  font-size: 19px;
+  font-weight: 700;
+  position: relative;
+}
+#게임추천,
+#핫딜 {
+  color: #979797;
+  position: relative;
+}
+.header_down .hm > div > a {
+  color: #222222;
+  position: relative;
+  transition: 0.3s;
+}
+header .icon a {
+  width: 32px;
+  height: 32px;
+}
+header .icon_search {
+  background-image: url(../img/main/icon/search.png);
+}
+header .icon_search:hover {
+  background-image: url(../img/main/icon/search_h.png);
+  transition: 0.3s;
+}
+header .icon_menu {
+  background-image: url(../img/main/icon/menu.png);
+}
+header .icon_menu:hover {
+  background-image: url(../img/main/icon/menu_h.png);
+  transition: 0.3s;
+}
+.header_down ul > .hm {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 53px;
+  transition: 0.5s;
+}
+.header_down:hover ul > .hm {
+  gap: 70px;
+}
+.header_down .line {
+  height: 3px;
+  width: 0;
+  display: block;
+  background-color: #ffc91f;
+  margin: 0 auto;
+  font-size: 0;
+  position: absolute;
+  bottom: -6px;
+  transition: 0.3s;
+  left: 50%;
+}
+.header_down .hm > div:hover .line {
+  width: 100%;
+  left: 0;
+}
+.header_down .hm > div #핫딜 + .line {
+  left: 18px;
+}
+.header_down .hm > div:hover #핫딜 + .line {
+  width: 36px;
+  left: 0;
+}
+.header_down .hm::after {
+  content: "bg";
+  width: 100%;
+  position: absolute;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  top: 118px;
+  height: 0;
+  font-size: 0;
+  border-bottom: 1px solid #ddd;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+.header_down:hover .hm::after {
+  height: 308px;
+}
+.header_down .hm::before {
+  content: "line";
+  height: 1px;
+  display: block;
+  position: absolute;
+  background-color: #ddd;
+  width: 100%;
+  font-size: 0;
+  left: 0;
+  top: 118px;
+  z-index: 999;
+}
+.header_down .sub_menu {
+  position: absolute;
+  z-index: 999;
+  width: 100px;
+  font-size: 16px;
+  text-align: center;
+  top: 70px;
+  left: -31px;
+  line-height: 44px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 0;
+}
+.header_down:hover .sub_menu {
+  height: 258px;
+  opacity: 1;
+}
+.header_down .sub_box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: fit-content;
+  position: absolute;
+  left: 59%;
+  top: 136px;
+  overflow: hidden;
+  z-index: 999;
+  height: 0;
+  transition: 0.5s;
+  opacity: 0;
+}
+.header_down:hover .sub_box {
+  height: 270px;
+  opacity: 1;
+}
+.header_down:hover ul > .hm .sub_box {
+  left: 61%;
+}
+.header_down .sub_box a {
+  width: 230px;
+  height: 128px;
+  min-height: 128px;
+  background-size: cover;
+  transition: 0.3s;
+}
+.header_down .sub_box a:hover {
+  filter: brightness(0.8);
+}
+.header_down .sub_box a:nth-child(1) {
+  background-image: url(../img/main/sub_box/1.png);
+}
+.header_down .sub_box a:nth-child(2) {
+  background-image: url(../img/main/sub_box/2.png);
+}
+.header_down .sub_menu a {
+  color: #222;
+}
+.header_down .sub_menu a:hover {
+  font-weight: 800;
+}
+
+/* footer */
+
+footer {
+  border-top: 1px solid #c5c5c5;
+  height: 100px;
+  position: relative;
+}
+
+/* footer_up */
+
+footer .up ul {
+  box-sizing: border-box;
+  display: flex;
+  column-gap: 40px;
+  background-color: transparent;
+}
+footer .up {
+  padding: 0 160px;
+  height: 102px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .up li a {
+  color: #222;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+footer .up li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+footer .up li:nth-child(1) a {
+  color: #ee0000;
+}
+footer .up .sns {
+  display: flex;
+  column-gap: 36px;
+}
+footer .up .sns a {
+  display: block;
+  width: 29px;
+  height: 27px;
+  transition: 0.3s;
+}
+footer .up .sns a:nth-child(1) {
+  background: url(../img/main/footer_h/facebook.svg) no-repeat;
+}
+footer .up .sns a:nth-child(1):hover {
+  background: url(../img/main/footer_h/facebook_h.svg) no-repeat;
+}
+footer .up .sns a:nth-child(2) {
+  background: url(../img/main/footer_h/youtube.svg) no-repeat;
+  background-position: 0 4px;
+}
+footer .up .sns a:nth-child(2):hover {
+  background: url(../img/main/footer_h/youtube_h.svg) no-repeat;
+  background-position: 0 4px;
+}
+footer .up .sns a:nth-child(3) {
+  background: url(../img/main/footer_h/instagram.svg) no-repeat;
+  background-position: 0 2px;
+}
+footer .up .sns a:nth-child(3):hover {
+  background: url(../img/main/footer_h/instagram_h.svg) no-repeat;
+  background-position: 0 2px;
+}
+footer .up .sns a:nth-child(4) {
+  background: url(../img/main/footer_h/twitter.svg) no-repeat;
+  background-position: 0 2px;
+}
+footer .up .sns a:nth-child(4):hover {
+  background: url(../img/main/footer_h/twitter_h.svg) no-repeat;
+  background-position: 0 2px;
+}
+footer .up .sns a:nth-child(5) {
+  background: url(../img/main/footer_h/kakaotalk.svg) no-repeat;
+  background-position: 0 2px;
+}
+footer .up .sns a:nth-child(5):hover {
+  background: url(../img/main/footer_h/kakaotalk_h.svg) no-repeat;
+  background-position: 0 2px;
+}
+
+/* footer_down */
+
+footer .down {
+  display: flex;
+  background-color: #222;
+  padding: 85px 160px;
+  box-sizing: border-box;
+}
+footer .left {
+  display: flex;
+}
+footer .down p {
+  color: #707070;
+  line-height: 180%;
+}
+footer .left > div {
+  display: flex;
+  align-items: center;
+  padding: 0 54px;
+}
+footer .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  row-gap: 10px;
+}
+footer .right span {
+  font-size: 28px;
+  font-weight: 800;
+  color: #707070;
+}
+footer .right a {
+  font-size: 14px;
+  padding: 15px 22px;
+  border: 1px solid #ffc91f;
+  color: #ffc91f;
+  display: inline-block;
+  transition: 0.3s;
+}
+footer .right a:hover {
+  background-color: rgba(255, 201, 31, 0.1);
+}
+footer .right > div {
+  display: flex;
+  column-gap: 8px;
+  margin-bottom: 12px;
+}

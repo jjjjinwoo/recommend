@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+.inner {
+  width: 616px;
+  margin: 100px auto;
+  border: 1px solid #dddddd;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* logo */
+
+.logo {
+  margin: auto;
+  margin-bottom: 30px;
+  width: fit-content;
+}
+
+/* navi */
+
+.navi {
+  display: flex;
+}
+.navi > a {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #222;
+  color: #222;
+  font-size: 20px;
+  font-weight: 800;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.navi > a:first-child {
+  border-bottom: 1px solid #ddd;
+  color: #bfbfbf;
+  font-weight: 700;
+}
+
+/* btn_con */
+
+.btn_con {
+  width: 84%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+.btn_con > a {
+  width: 100%;
+  height: 60px;
+  font-size: 17px;
+  font-weight: 800;
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid #e9e9e9;
+  margin: 4px 0;
+}
+.btn_con > a:nth-child(1) {
+  background-image: url(../img/sub/login/button.svg);
+  background-size: cover;
+  color: white;
+  margin: 30px 0;
+}
+.btn_con > a:nth-child(3) {
+  margin-top: 30px;
+}
+.btn_con > a:nth-child(3)::before {
+  content: "icon";
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/sub/signup/facebook.svg);
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  left: -8px;
+  top: 13px;
+}
+.btn_con > a:nth-child(4)::before {
+  content: "icon";
+  width: 22px;
+  height: 21px;
+  background-image: url(../img/sub/signup/kakaotalk.svg);
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  left: -8px;
+  top: 14px;
+}
+.btn_con > a:nth-child(5)::before {
+  content: "icon";
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/sub/signup/google.svg);
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  left: -8px;
+  top: 13px;
+}
+.btn_con > a:nth-child(6)::before {
+  content: "icon";
+  width: 19px;
+  height: 23px;
+  background-image: url(../img/sub/signup/apple.svg);
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  left: -8px;
+  top: 12px;
+}
+.btn_con > div {
+  display: flex;
+  align-items: center;
+}
+.btn_con > div > span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #666666;
+  text-align: center;
+  width: 400px;
+}
+.btn_con > div > .line {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}

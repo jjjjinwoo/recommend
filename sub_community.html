@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>커뮤니티</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/sub_community.css" />
+    <link rel="icon" href="./img/main/favicon.ico" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="header_con">
+        <!-- header_up -->
+        <div class="header_up">
+          <ul>
+            <li>
+              <a href="#" style="gap: 6px">
+                <span>KOR</span>
+                <img
+                  src="./img/main/triangle1.png"
+                  alt="triangle"
+                  style="margin-bottom: 3px"
+                />
+              </a>
+            </li>
+            <div style="display: flex; justify-content: flex-start; gap: 14px">
+              <li>
+                <a href="sub_login.html"> LOGIN </a>
+              </li>
+              <li>
+                <img
+                  src="./img/main/line 1.png"
+                  alt="line"
+                  style="margin-bottom: 2px"
+                />
+              </li>
+              <li>
+                <a href="sub_signup.html"> SIGNUP </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <!-- header_down -->
+        <div class="header_down">
+          <ul>
+            <h1>
+              <a href="index.html"
+                ><img src="./img/main/LOGO.png" alt="logo"
+              /></a>
+            </h1>
+            <li class="hm">
+              <div class="text" style="margin-top: 3px">
+                <a href="sub_news.html"> 뉴스 </a>
+                <div class="line"></div>
+                <ul class="sub_menu">
+                  <li><a href="sub_news.html">신작소개</a></li>
+                  <li><a href="sub_news.html">국내뉴스</a></li>
+                  <li><a href="sub_news.html">해외뉴스</a></li>
+                  <li><a href="sub_news.html">특집</a></li>
+                  <li><a href="sub_news.html">게임쇼</a></li>
+                  <li><a href="sub_news.html">게임순위</a></li>
+                </ul>
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="sub_grade.html"> 게임평점 </a>
+                <div class="line"></div>
+                <ul class="sub_menu" style="left: -15px">
+                  <li><a href="sub_grade.html">PS5</a></li>
+                  <li><a href="sub_grade.html">SWITCH</a></li>
+                  <li><a href="sub_grade.html">XBOX</a></li>
+                  <li><a href="sub_grade.html">PC</a></li>
+                  <li><a href="sub_grade.html">MOBILE</a></li>
+                </ul>
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="#"> 커뮤니티 </a>
+                <div class="line"></div>
+                <ul class="sub_menu" style="left: -15px">
+                  <li><a href="#">질문 게시판</a></li>
+                  <li><a href="#">자유 게시판</a></li>
+                  <li><a href="#">커뮤니티</a></li>
+                  <li><a href="#">스크린샷</a></li>
+                  <li><a href="#">게임공략</a></li>
+                </ul>
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="sub_video.html"> 영상 </a>
+                <div class="line"></div>
+                <ul class="sub_menu">
+                  <li><a href="sub_video.html">인기영상</a></li>
+                  <li><a href="sub_video.html">방송클립</a></li>
+                  <li><a href="sub_video.html">게임영상</a></li>
+                </ul>
+              </div>
+              <div style="margin-top: 3px">
+                <img
+                  src="./img/main/line2.png"
+                  alt="line"
+                  style="margin-bottom: 2px"
+                />
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="#" id="게임추천"> 게임추천 </a>
+                <div class="line"></div>
+              </div>
+              <div class="text" style="display: flex; gap: 15px">
+                <div style="margin-top: 3px">
+                  <a href="#" id="핫딜"> 핫딜 </a>
+                  <div class="line"></div>
+                </div>
+                <img src="./img/main/new.png" alt="new" />
+              </div>
+              <div class="sub_box">
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </li>
+            <li
+              style="display: flex; justify-content: flex-start; gap: 18px"
+              class="icon"
+            >
+              <a class="icon_search" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <a href="#" class="write">
+        <img src="./img/sub/community/write_icon.svg" alt="글쓰기" />
+      </a>
+      <!-- section1 -->
+      <section class="section1">
+        <div class="title_s">
+          <h2>인기 게시글</h2>
+          <a href="#" class="more"></a>
+        </div>
+        <div class="list">
+          <a href="#" class="content">
+            <div class="img" id="article_img1"></div>
+            <div class="text_con">
+              <div class="title">
+                <div>
+                  <h3 id="free_post">
+                    물리적 리얼리즘과 함께하는 최고의 RPG! 이 게임을 놓치지
+                    마세요!
+                  </h3>
+                  <span class="hits">12</span>
+                </div>
+                <span>2024/07/08</span>
+              </div>
+              <p>
+                대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일
+                현재 40세에 달하여야 한다. 법원은 최고법원인 대법원과
+                각급법원으로 조직된다. 국회의원과 정부는 법률안을 제출할 수
+                있다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이
+                정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수
+                있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다. 모든
+                국민은 행위시의...
+              </p>
+            </div>
+          </a>
+          <div class="line"></div>
+          <a href="#" class="content">
+            <div class="img" id="article_img2"></div>
+            <div class="text_con">
+              <div class="title">
+                <div>
+                  <h3 id="community_post">
+                    매혹적인 그래픽과 함께하는 액션 게임의 새로운 지평을 열다
+                  </h3>
+                  <span class="hits">12</span>
+                </div>
+
+                <span>2024/07/08</span>
+              </div>
+              <p>
+                대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일
+                현재 40세에 달하여야 한다. 법원은 최고법원인 대법원과
+                각급법원으로 조직된다. 국회의원과 정부는 법률안을 제출할 수
+                있다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이
+                정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수
+                있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다. 모든
+                국민은 행위시의...
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="line"></div>
+      </section>
+      <!-- section2 -->
+      <section class="section2">
+        <div>
+          <div class="title_s">
+            <h2>질문 게시판</h2>
+            <a href="#" class="more"></a>
+          </div>
+          <div class="list">
+            <div class="post">
+              <a href="#" class="name" id="hot">
+                게임 커뮤니티에서 떠오르는 트렌드와 다양한 토픽에 대한 토론
+                참여하기
+              </a>
+              <span class="hits">12</span>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name"> 인게임 퀘스트 풀이와 팁 공유해요! </a>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name" id="hot">
+                최애 캐릭터에 관한 이야기와 게임 내 새로운 업데이트 소식
+                공유하기
+              </a>
+              <span class="hits">12</span>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name">
+                다양한 인게임 퀘스트를 효과적으로 풀 수 있는 팁과 전략 공유하기
+              </a>
+              <span class="hits">12</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="title_s">
+            <h2>자유 게시판</h2>
+            <a href="#" class="more"></a>
+          </div>
+          <div class="list">
+            <div class="post">
+              <a href="#" class="name">
+                전투와 전략이 핵심! 이 게임은 진짜 대박이야, 놓치면 후회할 일
+                각인!
+              </a>
+              <span class="hits">12</span>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name">
+                현실감 넘치는 그래픽으로 온라인 커뮤니티를 뒤흔들고 있는 중이야!
+              </a>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name">
+                헤비한 퀘스트와 미션, 그리고 강력한 RPG의 매력에 도취해봐!
+              </a>
+              <span class="hits">12</span>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name" id="hot">
+                끊임없는 모험과 도전! 이 게임의 진정한 액션을 꼭 체험해야 돼!
+              </a>
+              <span class="hits">12</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section3 -->
+      <section class="section3">
+        <div class="title_s">
+          <h2>스크린샷</h2>
+          <a href="#" class="more"></a>
+        </div>
+        <div class="card_con">
+          <a href="#" class="card">
+            <div class="black">
+              <span class="name">최근 플레이한 게임 소감 공유해요!</span>
+              <span class="hits">12</span>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="black">
+              <span class="name">최근 플레이한 게임 소감 공유해요!</span>
+              <span class="hits">12</span>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="black">
+              <span class="name">최근 플레이한 게임 소감 공유해요!</span>
+              <span class="hits">12</span>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="black">
+              <span class="name">최근 플레이한 게임 소감 공유해요!</span>
+              <span class="hits">12</span>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- section4 -->
+      <section class="section2">
+        <div>
+          <div class="title_s">
+            <h2>질문 게시판</h2>
+            <a href="#" class="more"></a>
+          </div>
+          <div class="list">
+            <div class="post">
+              <a href="#" class="name" id="hot">
+                게임 커뮤니티에서 떠오르는 트렌드와 다양한 토픽에 대한 토론
+                참여하기
+              </a>
+              <span class="hits">12</span>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name"> 인게임 퀘스트 풀이와 팁 공유해요! </a>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name" id="hot">
+                최애 캐릭터에 관한 이야기와 게임 내 새로운 업데이트 소식
+                공유하기
+              </a>
+              <span class="hits">12</span>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name">
+                다양한 인게임 퀘스트를 효과적으로 풀 수 있는 팁과 전략 공유하기
+              </a>
+              <span class="hits">12</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="title_s">
+            <h2>자유 게시판</h2>
+            <a href="#" class="more"></a>
+          </div>
+          <div class="list">
+            <div class="post">
+              <a href="#" class="name">
+                전투와 전략이 핵심! 이 게임은 진짜 대박이야, 놓치면 후회할 일
+                각인!
+              </a>
+              <span class="hits">12</span>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name">
+                현실감 넘치는 그래픽으로 온라인 커뮤니티를 뒤흔들고 있는 중이야!
+              </a>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name">
+                헤비한 퀘스트와 미션, 그리고 강력한 RPG의 매력에 도취해봐!
+              </a>
+              <span class="hits">12</span>
+            </div>
+            <div class="line"></div>
+            <div class="post">
+              <a href="#" class="name" id="hot">
+                끊임없는 모험과 도전! 이 게임의 진정한 액션을 꼭 체험해야 돼!
+              </a>
+              <span class="hits">12</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <nav class="up">
+        <ul>
+          <li><a href="#">개인정보처리취급방침</a></li>
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">제휴문의</a></li>
+          <li><a href="#">광고안내</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">이용약관</a></li>
+        </ul>
+        <div class="sns">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </nav>
+      <div class="down">
+        <div class="left">
+          <div>
+            <img src="./img/main/footer_logo.png" alt="footer_logo" />
+          </div>
+          <p>
+            법인명: 리커맨드 | 주소: 경기 안양시 만안구 안양로 336 금강빌딩 8층
+            이젠아카데미컴퓨터학원<br />
+            대표이사: 박진우 | 사업자등록번호: 123-45-67890 | 통신판매업신고:
+            안양시 만안구 안양로 336<br />
+            이메일문의: somes03@naver.com | 이메일문의2: somes228@gmail.com<br />
+            리커맨드의 모든 콘텐츠는 무단 도용 시 법적인 제재를 받을 수
+            있습니다.<br /><br />
+            RECOMMEND ALL RIGHTS RESERVED.
+          </p>
+        </div>
+        <div class="right">
+          <div>
+            <a href="#">고객센터 바로가기</a>
+            <a href="#">1:1 문의 바로가기</a>
+          </div>
+          <span>고객센터 : 1544-1544</span>
+          <p>
+            전화문의 - 평일 9:00 ~ 18:00 / 점심시간 12:30 ~ 13:30 (
+            토,일및법정공휴일휴무 )
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

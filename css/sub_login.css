@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+.inner {
+  width: 616px;
+  margin: 100px auto;
+  border: 1px solid #dddddd;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* logo */
+
+.logo {
+  margin: auto;
+  margin-bottom: 30px;
+  width: fit-content;
+}
+
+/* navi */
+
+.navi {
+  display: flex;
+}
+.navi > a {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #222;
+  color: #222;
+  font-size: 20px;
+  font-weight: 800;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.navi > a:last-child {
+  border-bottom: 1px solid #ddd;
+  color: #bfbfbf;
+  font-weight: 700;
+}
+
+/* form */
+
+form {
+  width: 84%;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+form .user_id > label,
+form .user_pw > label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #666666;
+  margin: 10px 0;
+}
+form .user_id > input,
+form .user_pw > input {
+  background-color: #f5f5f5;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  padding: 17px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+form .down {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+form .down > div {
+  display: flex;
+  align-items: center;
+}
+#auto_login {
+  display: none;
+}
+#auto_login + label {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #bcbcbc;
+  border-radius: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+form .down .line {
+  width: 1px;
+  height: 10px;
+  background-color: #c5c5c5;
+  margin: 0 12px;
+}
+
+#finish {
+  width: 100%;
+  height: 60px;
+  background-image: url(../img/sub/login/button.svg);
+  background-size: cover;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-family: "NanumSquare", sans-serif;
+  font-weight: 800;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+/* sns */
+
+.sns {
+  width: 84%;
+  margin: 10px auto;
+}
+.sns > div:first-child {
+  display: flex;
+  align-items: center;
+}
+.sns > div:first-child > span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #666666;
+  text-align: center;
+  width: 400px;
+}
+.sns > div:first-child > .line {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+.sns > .btn {
+  display: flex;
+  column-gap: 24px;
+  margin: 0 auto;
+  margin-top: 24px;
+  width: fit-content;
+}
+.sns > .btn > a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 1px solid #ddd;
+  background-repeat: no-repeat;
+  background-position: 16px 16px;
+}
+.sns > .btn > a:nth-child(1) {
+  background-image: url(../img/sub/login/icon/facebook.svg);
+  background-position: 16px 16px;
+}
+.sns > .btn > a:nth-child(2) {
+  background-image: url(../img/sub/login/icon/kakaotalk.svg);
+  background-position: 18px 18px;
+}
+.sns > .btn > a:nth-child(3) {
+  background-image: url(../img/sub/login/icon/google.svg);
+  background-position: 17px 17px;
+}
+.sns > .btn > a:nth-child(4) {
+  background-image: url(../img/sub/login/icon/apple.svg);
+  background-position: 19px 15px;
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>뉴스</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/sub_news.css" />
+    <link rel="icon" href="./img/main/favicon.ico" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="header_con">
+        <!-- header_up -->
+        <div class="header_up">
+          <ul>
+            <li>
+              <a href="#" style="gap: 6px">
+                <span>KOR</span>
+                <img
+                  src="./img/main/triangle1.png"
+                  alt="triangle"
+                  style="margin-bottom: 3px"
+                />
+              </a>
+            </li>
+            <div style="display: flex; justify-content: flex-start; gap: 14px">
+              <li>
+                <a href="sub_login.html"> LOGIN </a>
+              </li>
+              <li>
+                <img
+                  src="./img/main/line 1.png"
+                  alt="line"
+                  style="margin-bottom: 2px"
+                />
+              </li>
+              <li>
+                <a href="sub_signup.html"> SIGNUP </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <!-- header_down -->
+        <div class="header_down">
+          <ul>
+            <h1>
+              <a href="index.html"
+                ><img src="./img/main/LOGO.png" alt="logo"
+              /></a>
+            </h1>
+            <li class="hm">
+              <div class="text" style="margin-top: 3px">
+                <a href="#"> 뉴스 </a>
+                <div class="line"></div>
+                <ul class="sub_menu">
+                  <li><a href="#">신작소개</a></li>
+                  <li><a href="#">국내뉴스</a></li>
+                  <li><a href="#">해외뉴스</a></li>
+                  <li><a href="#">특집</a></li>
+                  <li><a href="#">게임쇼</a></li>
+                  <li><a href="#">게임순위</a></li>
+                </ul>
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="sub_grade.html"> 게임평점 </a>
+                <div class="line"></div>
+                <ul class="sub_menu" style="left: -15px">
+                  <li><a href="sub_grade.html">PS5</a></li>
+                  <li><a href="sub_grade.html">SWITCH</a></li>
+                  <li><a href="sub_grade.html">XBOX</a></li>
+                  <li><a href="sub_grade.html">PC</a></li>
+                  <li><a href="sub_grade.html">MOBILE</a></li>
+                </ul>
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="sub_community.html"> 커뮤니티 </a>
+                <div class="line"></div>
+                <ul class="sub_menu" style="left: -15px">
+                  <li><a href="sub_community.html">질문 게시판</a></li>
+                  <li><a href="sub_community.html">자유 게시판</a></li>
+                  <li><a href="sub_community.html">커뮤니티</a></li>
+                  <li><a href="sub_community.html">스크린샷</a></li>
+                  <li><a href="sub_community.html">게임공략</a></li>
+                </ul>
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="sub_video.html"> 영상 </a>
+                <div class="line"></div>
+                <ul class="sub_menu">
+                  <li><a href="sub_video.html">인기영상</a></li>
+                  <li><a href="sub_video.html">방송클립</a></li>
+                  <li><a href="sub_video.html">게임영상</a></li>
+                </ul>
+              </div>
+              <div style="margin-top: 3px">
+                <img
+                  src="./img/main/line2.png"
+                  alt="line"
+                  style="margin-bottom: 2px"
+                />
+              </div>
+              <div class="text" style="margin-top: 3px">
+                <a href="#" id="게임추천"> 게임추천 </a>
+                <div class="line"></div>
+              </div>
+              <div class="text" style="display: flex; gap: 15px">
+                <div style="margin-top: 3px">
+                  <a href="#" id="핫딜"> 핫딜 </a>
+                  <div class="line"></div>
+                </div>
+                <img src="./img/main/new.png" alt="new" />
+              </div>
+              <div class="sub_box">
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </li>
+            <li
+              style="display: flex; justify-content: flex-start; gap: 18px"
+              class="icon"
+            >
+              <a class="icon_search" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <section class="section1">
+        <div class="title_s">
+          <div>
+            <h2>뉴스 특집</h2>
+            <a href="#" class="more"></a>
+          </div>
+          <div class="hot_search">
+            <span>실시간 급상승 검색어</span>
+            <span>1</span>
+            <span>플레이스테이션 썸머세일</span>
+            <span>
+              <img src="./img/sub/news/triangle.svg" alt="삼각형" />
+              12
+            </span>
+          </div>
+        </div>
+        <div class="con">
+          <a href="#" class="main">
+            <span>PREVIEW</span>
+            <h3>
+              디지털 학습 플랫폼 규모 확대, 교육 기회 더 넓힌다!<br />
+              모두가 배우고 성장할 수 있는 디지털 시대의 변화.
+            </h3>
+            <i></i>
+          </a>
+          <div class="sub">
+            <a href="#">
+              <span>PREVIEW</span>
+              <h3>
+                물 공급 안정화로 도시 개발 계획이 팽창 중!<br />
+                더 나은 도시 생활을 위한 새로운 기회가 열립니다.
+              </h3>
+              <i></i>
+            </a>
+            <div class="sub2">
+              <a href="#">
+                <span>PREVIEW</span>
+                <h3>
+                  사회적 연대감 강화를 위한<br />
+                  지역 자원 공유 프로젝트 대대적 발표!
+                </h3>
+              </a>
+              <div class="sub3">
+                <a href="#">
+                  <span>PREVIEW</span>
+                  <h3>
+                    사회적 연대감 강화를 위한<br />
+                    지역 자원 공유 프로젝트 대대적 발표!
+                  </h3>
+                </a>
+                <a href="#">
+                  <span>PREVIEW</span>
+                  <h3>
+                    사회적 연대감 강화를 위한<br />
+                    지역 자원 공유 프로젝트 대대적 발표!
+                  </h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="title">
+          <h2>2024 GAME SHOW SCHEDULE</h2>
+          <div class="line"></div>
+          <div class="btn">
+            <button></button>
+            <button></button>
+          </div>
+        </div>
+        <div class="card_con">
+          <div>
+            <h3>7월</h3>
+            <div class="text">
+              <span>부산 국제게임쇼</span>
+              <span>안양 포켓몬스터 소드 기획전</span>
+            </div>
+          </div>
+          <div>
+            <h3>8월</h3>
+            <div class="text">
+              <span>부산 국제게임쇼</span>
+            </div>
+          </div>
+          <div>
+            <h3>9월</h3>
+            <div class="text">
+              <span>부산 국제게임쇼</span>
+              <span>강남 국제게임쇼</span>
+              <span>안양 포켓몬스터 소드 기획전</span>
+            </div>
+          </div>
+          <div>
+            <h3>10월</h3>
+            <div class="text">
+              <span>부산 국제게임쇼</span>
+              <span>안양 포켓몬스터 소드 기획전</span>
+            </div>
+          </div>
+          <div>
+            <h3>11월</h3>
+            <div class="text">
+              <span>부산 국제게임쇼</span>
+              <span>안양 포켓몬스터 소드 기획전</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <div class="title_s">
+          <h2>국내 뉴스</h2>
+          <a href="#" class="more"></a>
+        </div>
+        <div class="list">
+          <a href="#" class="content">
+            <div class="img" id="article_img1"></div>
+            <div class="text_con">
+              <div class="title">
+                <h3 id="new_article">
+                  "신작 '어벤져스: 레전드스' 출시일이 공개되다!"
+                </h3>
+                <span>2024/07/08</span>
+              </div>
+              <p>
+                대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일
+                현재 40세에 달하여야 한다. 법원은 최고법원인 대법원과
+                각급법원으로 조직된다. 국회의원과 정부는 법률안을 제출할 수
+                있다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이
+                정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수
+                있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다. 모든
+                국민은 행위시의...
+              </p>
+            </div>
+          </a>
+          <div class="line"></div>
+          <a href="#" class="content">
+            <div class="img" id="article_img2"></div>
+            <div class="text_con">
+              <div class="title">
+                <h3>"인디게임 '루미노시티'의 창의적 세계 탐험"</h3>
+                <span>2024/07/08</span>
+              </div>
+              <p>
+                대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일
+                현재 40세에 달하여야 한다. 법원은 최고법원인 대법원과
+                각급법원으로 조직된다. 국회의원과 정부는 법률안을 제출할 수
+                있다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이
+                정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수
+                있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다. 모든
+                국민은 행위시의...
+              </p>
+            </div>
+          </a>
+          <div class="line"></div>
+        </div>
+        <div class="title_s">
+          <h2>해외 뉴스</h2>
+          <a href="#" class="more"></a>
+        </div>
+        <div class="list">
+          <a href="#" class="content">
+            <div class="img" id="article_img3"></div>
+            <div class="text_con">
+              <div class="title">
+                <h3 id="new_article">
+                  "e스포츠 대회 '리그 오브 레전드 월드 챔피언십'의 글로벌 흥행"
+                </h3>
+                <span>2024/07/08</span>
+              </div>
+              <p>
+                대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일
+                현재 40세에 달하여야 한다. 법원은 최고법원인 대법원과
+                각급법원으로 조직된다. 국회의원과 정부는 법률안을 제출할 수
+                있다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이
+                정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수
+                있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다. 모든
+                국민은 행위시의...
+              </p>
+            </div>
+          </a>
+          <div class="line"></div>
+          <a href="#" class="content">
+            <div class="img" id="article_img4"></div>
+            <div class="text_con">
+              <div class="title">
+                <h3>"모바일 RPG '에테르널 테일즈'의 독창적인 전투 시스템"</h3>
+                <span>2024/07/08</span>
+              </div>
+              <p>
+                대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일
+                현재 40세에 달하여야 한다. 법원은 최고법원인 대법원과
+                각급법원으로 조직된다. 국회의원과 정부는 법률안을 제출할 수
+                있다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이
+                정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수
+                있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다. 모든
+                국민은 행위시의...
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <nav class="up">
+        <ul>
+          <li><a href="#">개인정보처리취급방침</a></li>
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">제휴문의</a></li>
+          <li><a href="#">광고안내</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">이용약관</a></li>
+        </ul>
+        <div class="sns">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </nav>
+      <div class="down">
+        <div class="left">
+          <div>
+            <img src="./img/main/footer_logo.png" alt="footer_logo" />
+          </div>
+          <p>
+            법인명: 리커맨드 | 주소: 경기 안양시 만안구 안양로 336 금강빌딩 8층
+            이젠아카데미컴퓨터학원<br />
+            대표이사: 박진우 | 사업자등록번호: 123-45-67890 | 통신판매업신고:
+            안양시 만안구 안양로 336<br />
+            이메일문의: somes03@naver.com | 이메일문의2: somes228@gmail.com<br />
+            리커맨드의 모든 콘텐츠는 무단 도용 시 법적인 제재를 받을 수
+            있습니다.<br /><br />
+            RECOMMEND ALL RIGHTS RESERVED.
+          </p>
+        </div>
+        <div class="right">
+          <div>
+            <a href="#">고객센터 바로가기</a>
+            <a href="#">1:1 문의 바로가기</a>
+          </div>
+          <span>고객센터 : 1544-1544</span>
+          <p>
+            전화문의 - 평일 9:00 ~ 18:00 / 점심시간 12:30 ~ 13:30 (
+            토,일및법정공휴일휴무 )
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

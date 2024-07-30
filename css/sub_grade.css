@@ -1,0 +1,536 @@
+@charset "utf-8";
+
+/* 공통 */
+
+.title_s {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+.title_s h2 {
+  font-size: 40px;
+  font-weight: 700;
+  display: inline-block;
+}
+.title_s p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #c2c2c2;
+  margin-top: 22px;
+  display: inline-block;
+  margin-left: 24px;
+}
+.title_s > div:nth-child(2) {
+  display: flex;
+  column-gap: 16px;
+}
+.title_s button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.title_s button:nth-child(1) {
+  background-image: url(../img/main/btn/control_l.svg);
+  transition: 0.3s;
+}
+.title_s button:nth-child(1):hover {
+  background-image: url(../img/main/btn/control_l_h.svg);
+}
+.title_s button:nth-child(2) {
+  background-image: url(../img/main/btn/control_r.svg);
+  transition: 0.3s;
+}
+.title_s button:nth-child(2):hover {
+  background-image: url(../img/main/btn/control_r_h.svg);
+}
+
+/* header */
+
+header {
+  position: sticky;
+  top: -32px;
+  z-index: 999;
+}
+.header_down .hm > div:nth-child(2) > .line {
+  width: 100%;
+  left: 0;
+}
+.header_con {
+  position: static;
+}
+
+/* section1 */
+
+.section1 {
+  padding: 86px 0;
+}
+.section1 > div {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+}
+.section1 div > a {
+  width: 156px;
+  height: 64px;
+  border: 1px solid #d4d4d4;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 64px;
+  color: #222222;
+  transition: 0.3s;
+}
+.section1 div > a:nth-child(1) {
+  background-color: #222222;
+  color: white;
+  border-radius: 50px 0 0 50px;
+}
+.section1 div > a:nth-child(2) {
+  left: -1px;
+}
+.section1 div > a:nth-child(3) {
+  left: -2px;
+}
+.section1 div > a:nth-child(4) {
+  left: -3px;
+}
+.section1 div > a:nth-child(5) {
+  left: -4px;
+  border-radius: 0 50px 50px 0;
+}
+.section1 .hover:hover {
+  background-color: #f5f5f5;
+}
+
+/* section2 */
+
+.section2 {
+  padding: 0 160px;
+  box-sizing: border-box;
+}
+.section2 .card_con {
+  display: flex;
+  flex-direction: column;
+}
+.section2 .image {
+  display: block;
+  width: 288px;
+  height: 400px;
+  background-color: aquamarine;
+  margin-bottom: 22px;
+  position: relative;
+  transition: 0.3s;
+}
+.section2 .card_con:nth-child(1) > .image {
+  background-image: url(../img/sub/grade/card1/1.png);
+}
+.section2 .card_con:nth-child(2) > .image {
+  background-image: url(../img/sub/grade/card1/2.png);
+}
+.section2 .card_con:nth-child(3) > .image {
+  background-image: url(../img/sub/grade/card1/3.png);
+}
+.section2 .card_con:nth-child(4) > .image {
+  background-image: url(../img/sub/grade/card1/4.png);
+}
+.section2 .card_con:nth-child(5) > .image {
+  background-image: url(../img/sub/grade/card1/5.png);
+}
+.section2 .image::after {
+  content: "99";
+  font-size: 28px;
+  background-color: #222;
+  color: white;
+  padding: 4px 9px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 16px;
+  right: 78px;
+}
+.section2 .image::before {
+  content: "99";
+  font-size: 28px;
+  background-color: #222;
+  color: #ffca0f;
+  padding: 4px 9px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.section2 .name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  display: inline;
+  margin-bottom: 16px;
+  transition: 0.3s;
+  width: fit-content;
+}
+.section2 .card_con > span {
+  font-size: 14px;
+  color: #ee0000;
+}
+.section2 .list {
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .line {
+  height: 1px;
+  background-color: #ddd;
+  margin: 80px 0;
+}
+.section2 .title_s p {
+  font-weight: 500;
+}
+.section2 .card_con .image:hover {
+  filter: brightness(0.7);
+}
+.section2 .card_con .name:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* section3 */
+
+.section3 {
+  padding: 0 160px;
+  box-sizing: border-box;
+  padding-bottom: 140px;
+}
+.section3 .card_con {
+  display: flex;
+  column-gap: 40px;
+}
+.section3 .card_con > a {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 38px;
+  align-items: flex-end;
+  transition: 0.3s;
+  position: relative;
+}
+.section3 .card_con > a:nth-child(1) {
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0) 50%),
+    url(../img/sub/grade/card2/1.png);
+}
+.section3 .card_con > a:nth-child(2) {
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0) 50%),
+    url(../img/sub/grade/card2/2.png);
+}
+.section3 .card_con .box {
+  width: 122px;
+  height: 102px;
+  background-color: #222;
+  padding: 20px 18px;
+  box-sizing: border-box;
+  margin-right: 28px;
+  position: relative;
+  z-index: 2;
+}
+.section3 .card_con .box > span:nth-child(1) {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #767676;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.section3 .card_con .box > span:nth-child(2) {
+  font-size: 44px;
+  font-weight: 800;
+  color: white;
+}
+.section3 .card_con .box > span:nth-child(3) {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+}
+.section3 .name {
+  position: relative;
+  z-index: 2;
+}
+.section3 .name > h3 {
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.section3 .name > span {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.section3 .card_con > a > .black {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.section3 .card_con > a:hover > .black {
+  opacity: 0.5;
+}
+
+/* section4 */
+
+.section4 {
+  height: 620px;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f3f3 url(../img/sub/grade/bg_logo.svg) no-repeat;
+  background-position: -540px -519px;
+}
+.section4 > h3 {
+  margin-top: 200px;
+  margin-bottom: 74px;
+  font-size: 63px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+.section4 > p {
+  color: #8b8b8b;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 90px;
+}
+.section4 > a {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #ee0000;
+  padding: 22px 66px;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+.section4 > a:hover {
+  background-color: #c50000;
+}
+
+/* section5 */
+
+.section5 {
+  background-color: #222222;
+  padding: 94px 160px 124px 160px;
+}
+.section5 .title_s h2 {
+  color: white;
+}
+.section5 .title_s p {
+  color: #6b6b6b;
+}
+#search_name {
+  font-family: "NanumSquare", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  padding: 20px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #6d6d6d;
+  width: 760px;
+}
+#search_name:focus {
+  border: none;
+  border-bottom: 3px solid white;
+  outline: none;
+}
+#search_btn {
+  cursor: pointer;
+  width: 24px;
+  height: 27px;
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  background-image: url(../img/sub/grade/search.svg);
+  position: relative;
+  left: -42px;
+  top: -6px;
+}
+.section5 .search {
+  display: flex;
+  justify-content: space-between;
+}
+.section5 .sort {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.section5 .sort button {
+  cursor: pointer;
+  font-family: "NanumSquare", sans-serif;
+  display: inline-block;
+  opacity: 30%;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 26px;
+  border-radius: 30px;
+  height: fit-content;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.section5 .sort button:first-child {
+  opacity: 100%;
+}
+.section5 .list {
+  margin-top: 102px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 38px;
+}
+.section5 .image {
+  display: block;
+  min-width: 232px;
+  height: 332px;
+  background-color: aquamarine;
+  margin-bottom: 16px;
+  position: relative;
+  transition: 0.3s;
+}
+.section5 .card_con:nth-child(1) .image {
+  background-image: url(../img/sub/grade/card3/1.png);
+}
+.section5 .card_con:nth-child(2) .image {
+  background-image: url(../img/sub/grade/card3/2.png);
+}
+.section5 .card_con:nth-child(3) .image {
+  background-image: url(../img/sub/grade/card3/3.png);
+}
+.section5 .card_con:nth-child(4) .image {
+  background-image: url(../img/sub/grade/card3/4.png);
+}
+.section5 .card_con:nth-child(5) .image {
+  background-image: url(../img/sub/grade/card3/5.png);
+}
+.section5 .card_con:nth-child(6) .image {
+  background-image: url(../img/sub/grade/card3/6.png);
+}
+.section5 .card_con:nth-child(7) .image {
+  background-image: url(../img/sub/grade/card3/7.png);
+}
+.section5 .card_con:nth-child(8) .image {
+  background-image: url(../img/sub/grade/card3/8.png);
+}
+.section5 .card_con:nth-child(9) .image {
+  background-image: url(../img/sub/grade/card3/9.png);
+}
+.section5 .card_con:nth-child(10) .image {
+  background-image: url(../img/sub/grade/card3/10.png);
+}
+.section5 .card_con:nth-child(11) .image {
+  background-image: url(../img/sub/grade/card3/11.png);
+}
+.section5 .card_con:nth-child(12) .image {
+  background-image: url(../img/sub/grade/card3/12.png);
+}
+.section5 .card_con:nth-child(13) .image {
+  background-image: url(../img/sub/grade/card3/13.png);
+}
+.section5 .card_con:nth-child(14) .image {
+  background-image: url(../img/sub/grade/card3/14.png);
+}
+.section5 .card_con:nth-child(15) .image {
+  background-image: url(../img/sub/grade/card3/15.png);
+}
+.section5 .card_con:nth-child(16) .image {
+  background-image: url(../img/sub/grade/card3/16.png);
+}
+.section5 .card_con:nth-child(17) .image {
+  background-image: url(../img/sub/grade/card3/17.png);
+}
+.section5 .card_con:nth-child(18) .image {
+  background-image: url(../img/sub/grade/card3/18.png);
+}
+.section5 .image::after {
+  content: "99";
+  font-size: 18px;
+  background-color: #222;
+  color: white;
+  padding: 4px 9px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 12px;
+  right: 62px;
+}
+.section5 .image::before {
+  content: "99";
+  font-size: 18px;
+  background-color: #222;
+  color: #ffca0f;
+  padding: 4px 9px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+.section5 .name {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  display: block;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+.section5 .card_con > span {
+  font-size: 14px;
+  color: #7e7e7e;
+  float: right;
+  margin-top: 3px;
+}
+.section5 .pagination {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  column-gap: 26px;
+  margin-top: 80px;
+  align-items: center;
+}
+.section5 .pagination > a {
+  font-size: 18px;
+  color: white;
+  opacity: 30%;
+}
+.section5 .pagination > a:first-child {
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/sub/grade/left_s.svg);
+}
+.section5 .pagination > a:last-child {
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/sub/grade/right_s.svg);
+  opacity: 100%;
+}
+.section5 .pagination > a:nth-child(2) {
+  opacity: 100%;
+}
+.section5 .card_con:hover .image {
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* section6 */
+
+.section6 {
+  padding: 150px 0;
+}
+.section6 a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+.section6 a:hover {
+  filter: brightness(0.7);
+}
