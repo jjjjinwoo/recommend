@@ -23,7 +23,7 @@
         <div class="header_up">
           <ul>
             <li>
-              <a href="#" style="gap: 6px">
+              <a id="lang_menu" onclick="on()" style="gap: 6px">
                 <span>KOR</span>
                 <img
                   src="./img/main/triangle1.png"
@@ -31,6 +31,11 @@
                   style="margin-bottom: 3px"
                 />
               </a>
+              <div id="lang_list">
+                <a href="#">한국어</a>
+                <a href="#">ENGLISH</a>
+                <a href="#">中国话</a>
+              </div>
             </li>
             <div style="display: flex; justify-content: flex-start; gap: 14px">
               <li>
@@ -82,14 +87,14 @@
                 </ul>
               </div>
               <div class="text" style="margin-top: 3px">
-                <a href="#"> 커뮤니티 </a>
+                <a href="sub_community.html"> 커뮤니티 </a>
                 <div class="line"></div>
                 <ul class="sub_menu" style="left: -15px">
-                  <li><a href="#">질문 게시판</a></li>
-                  <li><a href="#">자유 게시판</a></li>
-                  <li><a href="#">커뮤니티</a></li>
-                  <li><a href="#">스크린샷</a></li>
-                  <li><a href="#">게임공략</a></li>
+                  <li><a href="sub_community.html">질문 게시판</a></li>
+                  <li><a href="sub_community.html">자유 게시판</a></li>
+                  <li><a href="sub_community.html">커뮤니티</a></li>
+                  <li><a href="sub_community.html">스크린샷</a></li>
+                  <li><a href="sub_community.html">게임공략</a></li>
                 </ul>
               </div>
               <div class="text" style="margin-top: 3px">
@@ -110,18 +115,18 @@
               </div>
               <div class="text" style="margin-top: 3px">
                 <a href="#" id="게임추천"> 게임추천 </a>
+                <ul class="sub_box">
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </ul>
                 <div class="line"></div>
               </div>
-              <div class="text" style="display: flex; gap: 15px">
+              <div class="text">
                 <div style="margin-top: 3px">
                   <a href="#" id="핫딜"> 핫딜 </a>
                   <div class="line"></div>
                 </div>
                 <img src="./img/main/new.png" alt="new" />
-              </div>
-              <div class="sub_box">
-                <a href="#"></a>
-                <a href="#"></a>
               </div>
             </li>
             <li
@@ -129,6 +134,7 @@
               class="icon"
             >
               <a class="icon_search" href="#"></a>
+              <a class="icon_menu" href="#"></a>
             </li>
           </ul>
         </div>

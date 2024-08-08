@@ -4,19 +4,15 @@
 
 .section1 {
   width: 100%;
-  height: 844px;
-  background-image: url(./../img/main/blackbox.svg),
-    url(./../img/main/mario.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%, 100%;
-  background-position: -550px 0px, 0px 0px;
+  height: 718px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 160px;
+  padding: 0 8.5vw;
   margin-top: 118px;
   position: relative;
+  overflow: hidden;
 }
 
 /* section1 - bar */
@@ -51,7 +47,7 @@
   width: fit-content;
   height: fit-content;
   position: relative;
-  top: 160px;
+  top: 180px;
   position: relative;
   z-index: 100;
 }
@@ -113,6 +109,7 @@
 .section1 .text h2 {
   animation-name: mt2;
   animation-duration: 2s;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
 }
 @keyframes mt2 {
   from {
@@ -168,8 +165,7 @@
 /* section1 - img */
 
 .section1 > .img {
-  height: 100%;
-  width: 100%;
+  min-height: 844px;
   display: flex;
   overflow: hidden;
   position: absolute;
@@ -225,12 +221,10 @@
   }
 }
 .section1 > .img > div > a {
-  width: 100%;
-  height: 100%;
-  min-width: 100vw;
-  background-size: 100vw;
+  width: 100vw;
   background-repeat: no-repeat;
-  background-size: contain, 100vw;
+  background-size: cover;
+  background-position: center;
   transition: 0.5s;
 }
 .section1 > .img > div > a:hover {
@@ -238,10 +232,10 @@
 }
 .section1 > .img > div a:nth-child(1) {
   background-image: url(../img/main/bg/1.png);
-  animation-name: main_motion;
+  /* animation-name: main_motion; */
   animation-duration: 3s;
 }
-@keyframes main_motion {
+/* @keyframes main_motion {
   from {
     background-size: 110vw;
     background-position: -20px -20px;
@@ -252,7 +246,7 @@
     background-position: 0px 0px;
     filter: brightness(1);
   }
-}
+} */
 .section1 > .img > div a:nth-child(2) {
   background-image: url(../img/main/bg/2.png);
 }
@@ -299,8 +293,11 @@
   position: relative;
   z-index: 100;
   box-sizing: border-box;
-  padding: 114px 160px;
+  padding: 114px 8.5vw;
   overflow: hidden;
+}
+.section2 .card > .box > .pick_m {
+  display: none;
 }
 .title > .prev {
   background: transparent url(../img/main/btn/control_l.svg) no-repeat;
@@ -449,7 +446,7 @@
 .section2 .blind {
   position: absolute;
   height: 100%;
-  width: 160px;
+  width: 8.5vw;
   background-color: #ffffff;
   top: 0;
   right: 0;
@@ -461,36 +458,60 @@
   width: 50px;
   background-image: linear-gradient(to right, rgb(255, 255, 255, 0), white);
   top: 0;
-  right: 160px;
+  right: 8.5vw;
   z-index: 2;
 }
 
 /* section3 */
 
 .section3 {
-  padding: 50px 0 0 0;
+  padding: 50px 0 150px 0;
   background-color: white;
   display: flex;
   margin: 0 auto;
+  justify-content: flex-end;
 }
 .section3 > .img {
-  width: 1160px;
+  flex: 1 1 0;
+  position: relative;
+}
+.section3 > .img > .main {
+  width: 1100px;
+  height: 466px;
+  background-color: #717171;
+  transform: skew(25deg);
+  position: relative;
+  left: -100px;
+  top: 28px;
+  z-index: 1;
+}
+.section3 > .img > .sub {
+  position: absolute;
+  width: 400px;
+  height: 284px;
+  background-color: #ffc91f;
+  top: -34px;
+  right: 88px;
+  transform: skew(25deg);
 }
 .section3 > .img::after {
   content: "STRATEGY";
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 154px;
-  position: relative;
-  left: 512px;
-  top: -84px;
+  font-size: 8vw;
+  position: absolute;
+  right: -116px;
+  top: 418px;
   color: #58305b;
+  z-index: 2;
 }
 .section3 > div:last-child {
   text-align: center;
   position: relative;
   top: 164px;
-  left: 100px;
+  flex: 1 1 0;
+  min-width: 45vw;
+  left: -7vw;
 }
 .section3 span {
   font-size: 18px;
@@ -500,8 +521,8 @@
 .section3 h3 {
   font-size: 40px;
   font-weight: 800;
-  margin-bottom: 40px;
-  margin-top: 16px;
+  margin-bottom: 46px;
+  margin-top: 20px;
 }
 .section3 .shortcut {
   background-image: url(../img/main/btn/shortcut.svg);
@@ -512,6 +533,11 @@
 }
 .section3 .shortcut:hover {
   background-image: url(../img/main/btn/shortcut_h.svg);
+}
+.section3 a {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
 }
 
 /* section4 */
@@ -632,7 +658,7 @@
 .section5 .card_con {
   display: flex;
   position: relative;
-  left: 160px;
+  left: 8.5vw;
   column-gap: 50px;
 }
 .section5 .card_con > a {
@@ -691,7 +717,7 @@
 /* section6 */
 
 .section6 {
-  padding: 142px 160px 177px 160px;
+  padding: 142px 8.5vw 177px 8.5vw;
   position: relative;
   z-index: 1;
 }
@@ -706,7 +732,7 @@
   border-bottom: 1px solid #d9d9d9;
 }
 .section6 table td:nth-child(1) a {
-  font-size: 24px;
+  font-size: 22px;
   color: #222;
   font-weight: 700;
   position: relative;
@@ -748,11 +774,12 @@
 /* section7 */
 
 .section7 {
+  overflow: hidden;
   position: relative;
   z-index: 1;
+  padding: 0 8.5vw;
 }
 .section7 > a {
-  width: 1600px;
   height: 288px;
   background-image: url(../img/main/ad.png);
   background-size: cover;
@@ -768,11 +795,11 @@
 
 .section8 {
   position: relative;
-  padding: 300px 160px 234px 160px;
+  padding: 300px 8.5vw 234px 8.5vw;
   z-index: 2;
 }
 .section8 > span {
-  font-size: 100px;
+  font-size: 5.2vw;
   font-weight: 500;
   letter-spacing: -0.5px;
   position: relative;
@@ -789,6 +816,10 @@
   position: absolute;
   left: -51px;
   top: 184px;
+  z-index: -998;
+}
+.section8 img {
+  width: 30vw;
 }
 
 /* body_bg */
@@ -798,6 +829,7 @@
   height: 1325px;
   position: absolute;
   right: 0;
-  bottom: -102px;
+  top: -1322px;
+  z-index: -999;
   background-image: url(../img/main/body_bg.svg);
 }

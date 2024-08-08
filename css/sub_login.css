@@ -2,7 +2,8 @@
 
 .inner {
   width: 616px;
-  margin: 100px auto;
+  margin: 0 auto;
+  margin-top: 3vw;
   border: 1px solid #dddddd;
   padding: 50px;
   box-sizing: border-box;

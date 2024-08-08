@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./css/basic.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="icon" href="./img/main/favicon.ico" />
   </head>
   <body>
@@ -24,7 +25,7 @@
           <div class="header_up">
             <ul>
               <li>
-                <a href="#" style="gap: 6px">
+                <a id="lang_menu" onclick="on()" style="gap: 6px">
                   <span>KOR</span>
                   <img
                     src="./img/main/triangle1.png"
@@ -32,6 +33,11 @@
                     style="margin-bottom: 3px"
                   />
                 </a>
+                <div id="lang_list">
+                  <a href="#">한국어</a>
+                  <a href="#">ENGLISH</a>
+                  <a href="#">中国话</a>
+                </div>
               </li>
               <div
                 style="display: flex; justify-content: flex-start; gap: 14px"
@@ -56,7 +62,9 @@
           <div class="header_down">
             <ul>
               <h1>
-                <a href="#"><img src="./img/main/LOGO.png" alt="logo" /></a>
+                <a href="index.html"
+                  ><img src="./img/main/LOGO.png" alt="logo"
+                /></a>
               </h1>
               <li class="hm">
                 <div class="text" style="margin-top: 3px">
@@ -111,18 +119,18 @@
                 </div>
                 <div class="text" style="margin-top: 3px">
                   <a href="#" id="게임추천"> 게임추천 </a>
+                  <ul class="sub_box">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                  </ul>
                   <div class="line"></div>
                 </div>
-                <div class="text" style="display: flex; gap: 15px">
+                <div class="text">
                   <div style="margin-top: 3px">
                     <a href="#" id="핫딜"> 핫딜 </a>
                     <div class="line"></div>
                   </div>
                   <img src="./img/main/new.png" alt="new" />
-                </div>
-                <div class="sub_box">
-                  <a href="#"></a>
-                  <a href="#"></a>
                 </div>
               </li>
               <li
@@ -130,6 +138,7 @@
                 class="icon"
               >
                 <a class="icon_search" href="#"></a>
+                <a class="icon_menu" href="#"></a>
               </li>
             </ul>
           </div>
@@ -195,6 +204,11 @@
             <div class="card">
               <div class="box">
                 <img class="pick" src="./img/main/icon/pick.svg" alt="pick" />
+                <img
+                  class="pick_m"
+                  src="./img/main/icon/pick_m.svg"
+                  alt="pick_m"
+                />
                 <img class="game" src="./img/main/game/1.png" alt="game1" />
               </div>
               <div>
@@ -345,11 +359,14 @@
         </section>
         <!-- section3 -->
         <section class="section3">
-          <div class="img"><img src="./img/main/sec3.png" alt="sec3_bg" /></div>
+          <div class="img">
+            <div class="main"></div>
+            <div class="sub"></div>
+          </div>
           <div>
             <span>이걸 어떻게 깨지?</span>
             <h3>모두 함께 쓰는 게임 공략</h3>
-            <a href="#">
+            <a href="sub_community.html">
               <div class="shortcut"></div>
             </a>
           </div>
@@ -358,12 +375,12 @@
         <section class="section4">
           <h3><span style="color: #0eb200">기</span>종별 게임 평점 보기</h3>
           <div class="shortcut">
-            <a href="#"><i></i><span>닌텐도 스위치</span></a>
-            <a href="#"><i></i><span>PS5</span></a>
-            <a href="#"><i></i><span>XBOX</span></a>
-            <a href="#"><i></i><span>PC</span></a>
-            <a href="#"><i></i><span>모바일</span></a>
-            <a href="#"><i></i><span>더보기</span></a>
+            <a href="sub_grade.html"><i></i><span>닌텐도 스위치</span></a>
+            <a href="sub_grade.html"><i></i><span>PS5</span></a>
+            <a href="sub_grade.html"><i></i><span>XBOX</span></a>
+            <a href="sub_grade.html"><i></i><span>PC</span></a>
+            <a href="sub_grade.html"><i></i><span>모바일</span></a>
+            <a href="sub_grade.html"><i></i><span>더보기</span></a>
           </div>
         </section>
         <!-- section5 -->
@@ -449,7 +466,6 @@
           <img src="./img/main/recommend.svg" alt="text_logo" />
           <div class="high"></div>
         </section>
-        <div class="body_bg"></div>
       </main>
       <footer>
         <nav class="up">
@@ -461,6 +477,7 @@
             <li><a href="#">고객센터</a></li>
             <li><a href="#">이용약관</a></li>
           </ul>
+          <div class="line"></div>
           <div class="sns">
             <a href="#"></a>
             <a href="#"></a>
@@ -492,12 +509,15 @@
             </div>
             <span>고객센터 : 1544-1544</span>
             <p>
-              전화문의 - 평일 9:00 ~ 18:00 / 점심시간 12:30 ~ 13:30 (
-              토,일및법정공휴일휴무 )
+              전화문의 - 평일 9:00 ~ 18:00 /<br />
+              점심시간 12:30 ~ 13:30 ( 토,일및법정공휴일휴무 )
             </p>
           </div>
+          <div class="body_bg"></div>
         </div>
       </footer>
     </div>
+    <!-- js -->
+    <script src="./js/basic.js"></script>
   </body>
 </html>

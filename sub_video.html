@@ -23,7 +23,7 @@
         <div class="header_up">
           <ul>
             <li>
-              <a href="#" style="gap: 6px">
+              <a id="lang_menu" onclick="on()" style="gap: 6px">
                 <span>KOR</span>
                 <img
                   src="./img/main/triangle1.png"
@@ -31,6 +31,11 @@
                   style="margin-bottom: 3px"
                 />
               </a>
+              <div id="lang_list">
+                <a href="#">한국어</a>
+                <a href="#">ENGLISH</a>
+                <a href="#">中国话</a>
+              </div>
             </li>
             <div style="display: flex; justify-content: flex-start; gap: 14px">
               <li>
@@ -93,12 +98,12 @@
                 </ul>
               </div>
               <div class="text" style="margin-top: 3px">
-                <a href="#"> 영상 </a>
+                <a href="sub_video.html"> 영상 </a>
                 <div class="line"></div>
                 <ul class="sub_menu">
-                  <li><a href="#">인기영상</a></li>
-                  <li><a href="#">방송클립</a></li>
-                  <li><a href="#">게임영상</a></li>
+                  <li><a href="sub_video.html">인기영상</a></li>
+                  <li><a href="sub_video.html">방송클립</a></li>
+                  <li><a href="sub_video.html">게임영상</a></li>
                 </ul>
               </div>
               <div style="margin-top: 3px">
@@ -110,18 +115,18 @@
               </div>
               <div class="text" style="margin-top: 3px">
                 <a href="#" id="게임추천"> 게임추천 </a>
+                <ul class="sub_box">
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </ul>
                 <div class="line"></div>
               </div>
-              <div class="text" style="display: flex; gap: 15px">
+              <div class="text">
                 <div style="margin-top: 3px">
                   <a href="#" id="핫딜"> 핫딜 </a>
                   <div class="line"></div>
                 </div>
                 <img src="./img/main/new.png" alt="new" />
-              </div>
-              <div class="sub_box">
-                <a href="#"></a>
-                <a href="#"></a>
               </div>
             </li>
             <li
@@ -129,6 +134,7 @@
               class="icon"
             >
               <a class="icon_search" href="#"></a>
+              <a class="icon_menu" href="#"></a>
             </li>
           </ul>
         </div>

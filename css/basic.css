@@ -2,13 +2,27 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* 스크롤바 */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 /* 공통 영역 */
 
 * {
   margin: 0 auto;
 }
 body {
-  min-width: 1400px;
   background-color: rgb(255, 255, 255);
   font-family: "NanumSquare", sans-serif;
   letter-spacing: -0.01em;
@@ -24,7 +38,7 @@ a {
   background-color: #ffca0f;
 }
 h3 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 800;
   color: #222;
   line-height: 36px;
@@ -50,13 +64,13 @@ h3 {
 header {
   position: sticky;
   top: 86px;
-  z-index: 999;
+  z-index: 998;
 }
 .header_con {
   width: 100%;
   height: 118px;
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   top: -118px;
 }
 
@@ -66,7 +80,7 @@ header {
   width: 100%;
   height: 32px;
   background-color: #222;
-  padding: 0 160px;
+  padding: 0 8.5vw;
   box-sizing: border-box;
 }
 .header_up ul {
@@ -75,17 +89,49 @@ header {
 .header_up li {
   line-height: 32px;
   font-size: 14px;
+  position: relative;
 }
 .header_up ul {
   display: flex;
   justify-content: space-between;
 }
 .header_up a {
+  cursor: pointer;
   color: white;
   transition: 0.3s;
 }
 .header_up a:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+.header_up #lang_list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 999;
+  top: 42px;
+  left: -72px;
+}
+.header_up #lang_list > a {
+  width: 172px;
+  height: 34px;
+  font-size: 12px;
+  text-align: center;
+  font-size: 800;
+  color: #222;
+  background-color: white;
+  border: 1px solid #ddd;
+  position: relative;
+  transition: 0.3s;
+}
+.header_up #lang_list > a:hover {
+  background-color: #f3f3f3;
+}
+.header_up #lang_list > a:nth-child(2) {
+  top: -1px;
+}
+.header_up #lang_list > a:nth-child(3) {
+  font-family: "Roboto", sans-serif;
+  top: -2px;
 }
 
 /* Header_down */
@@ -127,6 +173,7 @@ header .icon_search:hover {
   transition: 0.3s;
 }
 header .icon_menu {
+  display: none;
   background-image: url(../img/main/icon/menu.png);
 }
 header .icon_menu:hover {
@@ -166,6 +213,10 @@ header .icon_menu:hover {
   width: 36px;
   left: 0;
 }
+.header_down .hm > div:nth-child(7) {
+  display: flex;
+  gap: 15px;
+}
 .header_down .hm::after {
   content: "bg";
   width: 100%;
@@ -193,11 +244,11 @@ header .icon_menu:hover {
   font-size: 0;
   left: 0;
   top: 118px;
-  z-index: 999;
+  z-index: 998;
 }
 .header_down .sub_menu {
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   width: 100px;
   font-size: 16px;
   text-align: center;
@@ -219,10 +270,10 @@ header .icon_menu:hover {
   gap: 14px;
   width: fit-content;
   position: absolute;
-  left: 59%;
-  top: 136px;
+  left: -18px;
+  top: 70px;
   overflow: hidden;
-  z-index: 999;
+  z-index: 998;
   height: 0;
   transition: 0.5s;
   opacity: 0;
@@ -230,9 +281,6 @@ header .icon_menu:hover {
 .header_down:hover .sub_box {
   height: 270px;
   opacity: 1;
-}
-.header_down:hover ul > .hm .sub_box {
-  left: 61%;
 }
 .header_down .sub_box a {
   width: 230px;
@@ -279,6 +327,7 @@ footer .up {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 footer .up li a {
   color: #222;
@@ -301,6 +350,9 @@ footer .up .sns a {
   width: 29px;
   height: 27px;
   transition: 0.3s;
+}
+footer .up .line {
+  display: none;
 }
 footer .up .sns a:nth-child(1) {
   background: url(../img/main/footer_h/facebook.svg) no-repeat;
@@ -346,8 +398,10 @@ footer .up .sns a:nth-child(5):hover {
 footer .down {
   display: flex;
   background-color: #222;
-  padding: 85px 160px;
+  padding: 85px 8.5vw;
+  justify-content: space-between;
   box-sizing: border-box;
+  position: relative;
 }
 footer .left {
   display: flex;
@@ -367,6 +421,7 @@ footer .right {
   justify-content: flex-end;
   align-items: flex-end;
   row-gap: 10px;
+  text-align: right;
 }
 footer .right span {
   font-size: 28px;

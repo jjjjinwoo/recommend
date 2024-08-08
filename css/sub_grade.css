@@ -115,31 +115,14 @@ header {
   display: flex;
   flex-direction: column;
 }
-.section2 .image {
-  display: block;
-  width: 288px;
-  height: 400px;
-  background-color: aquamarine;
+.section2 img {
+  cursor: pointer;
+  width: 100%;
   margin-bottom: 22px;
   position: relative;
   transition: 0.3s;
 }
-.section2 .card_con:nth-child(1) > .image {
-  background-image: url(../img/sub/grade/card1/1.png);
-}
-.section2 .card_con:nth-child(2) > .image {
-  background-image: url(../img/sub/grade/card1/2.png);
-}
-.section2 .card_con:nth-child(3) > .image {
-  background-image: url(../img/sub/grade/card1/3.png);
-}
-.section2 .card_con:nth-child(4) > .image {
-  background-image: url(../img/sub/grade/card1/4.png);
-}
-.section2 .card_con:nth-child(5) > .image {
-  background-image: url(../img/sub/grade/card1/5.png);
-}
-.section2 .image::after {
+.section2 img::after {
   content: "99";
   font-size: 28px;
   background-color: #222;
@@ -150,7 +133,7 @@ header {
   bottom: 16px;
   right: 78px;
 }
-.section2 .image::before {
+.section2 img::before {
   content: "99";
   font-size: 28px;
   background-color: #222;
@@ -163,7 +146,7 @@ header {
 }
 .section2 .name {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
   color: #222;
   display: inline;
   margin-bottom: 16px;
@@ -177,6 +160,7 @@ header {
 .section2 .list {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 .section2 .line {
   height: 1px;
@@ -186,7 +170,7 @@ header {
 .section2 .title_s p {
   font-weight: 500;
 }
-.section2 .card_con .image:hover {
+.section2 .card_con img:hover {
   filter: brightness(0.7);
 }
 .section2 .card_con .name:hover {
@@ -390,70 +374,18 @@ header {
   flex-wrap: wrap;
   column-gap: 38px;
 }
-.section5 .image {
+.section5 img {
   display: block;
-  min-width: 232px;
-  height: 332px;
+
+  width: 100%;
+
   background-color: aquamarine;
   margin-bottom: 16px;
   position: relative;
   transition: 0.3s;
+  cursor: pointer;
 }
-.section5 .card_con:nth-child(1) .image {
-  background-image: url(../img/sub/grade/card3/1.png);
-}
-.section5 .card_con:nth-child(2) .image {
-  background-image: url(../img/sub/grade/card3/2.png);
-}
-.section5 .card_con:nth-child(3) .image {
-  background-image: url(../img/sub/grade/card3/3.png);
-}
-.section5 .card_con:nth-child(4) .image {
-  background-image: url(../img/sub/grade/card3/4.png);
-}
-.section5 .card_con:nth-child(5) .image {
-  background-image: url(../img/sub/grade/card3/5.png);
-}
-.section5 .card_con:nth-child(6) .image {
-  background-image: url(../img/sub/grade/card3/6.png);
-}
-.section5 .card_con:nth-child(7) .image {
-  background-image: url(../img/sub/grade/card3/7.png);
-}
-.section5 .card_con:nth-child(8) .image {
-  background-image: url(../img/sub/grade/card3/8.png);
-}
-.section5 .card_con:nth-child(9) .image {
-  background-image: url(../img/sub/grade/card3/9.png);
-}
-.section5 .card_con:nth-child(10) .image {
-  background-image: url(../img/sub/grade/card3/10.png);
-}
-.section5 .card_con:nth-child(11) .image {
-  background-image: url(../img/sub/grade/card3/11.png);
-}
-.section5 .card_con:nth-child(12) .image {
-  background-image: url(../img/sub/grade/card3/12.png);
-}
-.section5 .card_con:nth-child(13) .image {
-  background-image: url(../img/sub/grade/card3/13.png);
-}
-.section5 .card_con:nth-child(14) .image {
-  background-image: url(../img/sub/grade/card3/14.png);
-}
-.section5 .card_con:nth-child(15) .image {
-  background-image: url(../img/sub/grade/card3/15.png);
-}
-.section5 .card_con:nth-child(16) .image {
-  background-image: url(../img/sub/grade/card3/16.png);
-}
-.section5 .card_con:nth-child(17) .image {
-  background-image: url(../img/sub/grade/card3/17.png);
-}
-.section5 .card_con:nth-child(18) .image {
-  background-image: url(../img/sub/grade/card3/18.png);
-}
-.section5 .image::after {
+.section5 img::after {
   content: "99";
   font-size: 18px;
   background-color: #222;
@@ -464,7 +396,7 @@ header {
   bottom: 12px;
   right: 62px;
 }
-.section5 .image::before {
+.section5 img::before {
   content: "99";
   font-size: 18px;
   background-color: #222;
@@ -483,7 +415,14 @@ header {
   margin-bottom: 50px;
   display: inline-block;
 }
-.section5 .card_con > span {
+.section5 .card_con {
+  flex: 1 0 200px;
+}
+.section5 .card_con > div {
+  display: flex;
+  justify-content: space-between;
+}
+.section5 .card_con span {
   font-size: 14px;
   color: #7e7e7e;
   float: right;
@@ -516,7 +455,7 @@ header {
 .section5 .pagination > a:nth-child(2) {
   opacity: 100%;
 }
-.section5 .card_con:hover .image {
+.section5 .card_con:hover img {
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
 }
 
