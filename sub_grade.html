@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="./css/basic.css" />
     <link rel="stylesheet" href="./css/sub_grade.css" />
+    <link rel="stylesheet" href="./responsive_css/basic.css" />
+    <link rel="stylesheet" href="./responsive_css/sub_grade.css" />
     <link rel="icon" href="./img/main/favicon.ico" />
   </head>
   <body>
@@ -136,8 +138,10 @@
                 style="display: flex; justify-content: flex-start; gap: 18px"
                 class="icon"
               >
+                <a class="icon_notification" href="#"></a>
                 <a class="icon_search" href="#"></a>
-                <a class="icon_menu" href="#"></a>
+                <a class="icon_notification_m" href="#"></a>
+                <a class="icon_menu_m" onclick="onSubmenuM()"></a>
               </li>
             </ul>
           </div>
@@ -198,10 +202,6 @@
             <div>
               <h2>전문가 Pick 게임</h2>
             </div>
-            <div>
-              <button></button>
-              <button></button>
-            </div>
           </div>
           <div class="card_con">
             <a href="#">
@@ -231,7 +231,11 @@
           </div>
         </section>
         <section class="section4">
-          <h3>RECOMMEND’s SUPER RECOMMEND</h3>
+          <div>
+            <h3>RECOMMEND’s</h3>
+            <h3>SUPER RECOMMEND</h3>
+          </div>
+
           <p>그동안 리커맨드를 수상받은 게임들을 살펴보세요!</p>
           <a href="#">수상작 보러가기</a>
         </section>
@@ -240,7 +244,12 @@
             <div>
               <h2>전체 게임</h2>
               <p>*노란색 평점은 평론가 평점입니다.</p>
+              <a href="#" class="title_sort">
+                <span>최신순</span>
+                <img src="./img/sub/grade/i_s.svg" alt="icon" />
+              </a>
             </div>
+            <a href="#"></a>
           </div>
           <div class="search">
             <form action="#" method="post" name="search">
@@ -253,7 +262,10 @@
               <input id="search_btn" type="submit" />
             </form>
             <div class="sort">
-              <button>최신순</button>
+              <button>
+                최신순
+                <i></i>
+              </button>
               <button>오래된순</button>
               <button>평점높은순</button>
               <button>평점낮은순</button>
@@ -261,126 +273,162 @@
           </div>
           <div class="list">
             <div class="card_con">
-              <img src="./img/sub/grade/card3/1.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/1.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/2.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/2.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/3.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/3.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/4.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/4.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/5.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/5.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/6.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/6.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/7.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/7.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/8.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/8.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/9.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/9.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/10.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/10.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/11.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/11.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/12.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/12.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/13.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/13.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/14.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/14.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/15.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/15.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/16.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/16.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/17.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/17.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
               </div>
             </div>
             <div class="card_con">
-              <img src="./img/sub/grade/card3/18.png" alt="game_title" />
+              <div class="img">
+                <img src="./img/sub/grade/card3/18.png" alt="game_title" />
+              </div>
               <div>
                 <a class="name" href="#">게임 타이틀 제목</a>
                 <span>24.7.4</span>
@@ -454,6 +502,55 @@
           </div>
         </div>
       </footer>
+      <div class="sub_menu_m">
+        <div id="sub_menu_m_list">
+          <section class="sec1">
+            <div class="up">
+              <a class="chatbot">
+                <img src="./img/main/submenu_m/chatbot.svg" alt="chatbot" />
+                <span>챗봇 상담하기</span>
+              </a>
+              <button onclick="offSubmenuM()">
+                <img src="./img/main/submenu_m/x.svg" alt="X" />
+              </button>
+            </div>
+            <form class="down" action="#" method="post" name="member">
+              <input type="text" placeholder="검색어를 입력해주세요." />
+              <input type="submit" value="작성완료" />
+            </form>
+          </section>
+          <section class="sec2">
+            <a href="sub_news.html">
+              <span>뉴스</span>
+              <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+            </a>
+            <a href="sub_grade.html">
+              <span>게임평점</span>
+              <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+            </a>
+            <a href="sub_community.html">
+              <span>커뮤니티</span>
+              <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+            </a>
+            <a href="sub_video.html">
+              <span>영상</span>
+              <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+            </a>
+            <div></div>
+            <a href="#">
+              <span>게임추천</span>
+              <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+            </a>
+            <a href="#">
+              <span>핫딜</span>
+              <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+            </a>
+          </section>
+        </div>
+        <div id="sub_black"></div>
+      </div>
     </div>
+    <!-- js -->
+    <script src="./js/basic.js"></script>
   </body>
 </html>

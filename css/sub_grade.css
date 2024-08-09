@@ -26,7 +26,7 @@
 }
 .title_s button {
   width: 36px;
-  height: 36px;
+  height: 37px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -51,7 +51,6 @@
 header {
   position: sticky;
   top: -32px;
-  z-index: 999;
 }
 .header_down .hm > div:nth-child(2) > .line {
   width: 100%;
@@ -108,7 +107,7 @@ header {
 /* section2 */
 
 .section2 {
-  padding: 0 160px;
+  padding: 0 8.5vw;
   box-sizing: border-box;
 }
 .section2 .card_con {
@@ -180,7 +179,7 @@ header {
 /* section3 */
 
 .section3 {
-  padding: 0 160px;
+  padding: 0 8.5vw;
   box-sizing: border-box;
   padding-bottom: 140px;
 }
@@ -197,6 +196,7 @@ header {
   align-items: flex-end;
   transition: 0.3s;
   position: relative;
+  background-size: cover;
 }
 .section3 .card_con > a:nth-child(1) {
   background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0) 50%),
@@ -276,16 +276,23 @@ header {
   background: #f3f3f3 url(../img/sub/grade/bg_logo.svg) no-repeat;
   background-position: -540px -519px;
 }
-.section4 > h3 {
+.section4 > div {
+  display: flex;
+  gap: 18px;
   margin-top: 200px;
-  margin-bottom: 74px;
+  margin-bottom: 76px;
+}
+.section4 h3 {
   font-size: 63px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
+  color: #ee0000;
+  margin-bottom: 0;
+  line-height: 1;
 }
 .section4 > p {
   color: #8b8b8b;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 90px;
 }
@@ -306,13 +313,30 @@ header {
 
 .section5 {
   background-color: #222222;
-  padding: 94px 160px 124px 160px;
+  padding: 94px 8.5vw 124px 8.5vw;
 }
 .section5 .title_s h2 {
   color: white;
 }
 .section5 .title_s p {
   color: #6b6b6b;
+}
+.section5 .title_sort {
+  display: none;
+  position: relative;
+  top: -2px;
+}
+.section5 .title_sort > span {
+  color: white;
+  margin-right: 3px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.section5 .title_s > a {
+  display: block;
+  width: 19px;
+  height: 20px;
+  background-image: url(../img/sub/grade/search_s.svg);
 }
 #search_name {
   font-family: "NanumSquare", sans-serif;
@@ -323,7 +347,7 @@ header {
   background-color: transparent;
   border: none;
   border-bottom: 3px solid #6d6d6d;
-  width: 760px;
+  width: 40vw;
 }
 #search_name:focus {
   border: none;
@@ -354,7 +378,7 @@ header {
 .section5 .sort button {
   cursor: pointer;
   font-family: "NanumSquare", sans-serif;
-  display: inline-block;
+  display: flex;
   opacity: 30%;
   font-size: 17px;
   font-weight: 500;
@@ -368,24 +392,35 @@ header {
 .section5 .sort button:first-child {
   opacity: 100%;
 }
+.section5 .sort button > i {
+  display: block;
+  width: 13px;
+  height: 7px;
+  background-image: url(../img/sub/grade/i.svg);
+  position: relative;
+  top: 5px;
+  right: -8px;
+}
 .section5 .list {
   margin-top: 102px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 38px;
 }
-.section5 img {
+.section5 .img {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.section5 .img > img {
   display: block;
-
   width: 100%;
-
-  background-color: aquamarine;
   margin-bottom: 16px;
   position: relative;
   transition: 0.3s;
   cursor: pointer;
 }
-.section5 img::after {
+.section5 .img::after {
   content: "99";
   font-size: 18px;
   background-color: #222;
@@ -396,7 +431,7 @@ header {
   bottom: 12px;
   right: 62px;
 }
-.section5 img::before {
+.section5 .img::before {
   content: "99";
   font-size: 18px;
   background-color: #222;
@@ -406,6 +441,7 @@ header {
   position: absolute;
   bottom: 12px;
   right: 12px;
+  z-index: 1;
 }
 .section5 .name {
   font-size: 18px;
@@ -416,9 +452,9 @@ header {
   display: inline-block;
 }
 .section5 .card_con {
-  flex: 1 0 200px;
+  flex: 0 0 200px;
 }
-.section5 .card_con > div {
+.section5 .card_con > div:last-child {
   display: flex;
   justify-content: space-between;
 }
@@ -472,4 +508,7 @@ header {
 }
 .section6 a:hover {
   filter: brightness(0.7);
+}
+.section6 img {
+  width: 100%;
 }

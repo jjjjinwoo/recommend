@@ -88,9 +88,6 @@
     font-size: 18px;
     margin-bottom: 28px;
   }
-  header h1 img {
-    height: 30px;
-  }
   .header_up {
     display: none;
   }
@@ -211,7 +208,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../img/main/sec3.png);
     background-size: 200%;
-    background-position: -122px -154px;
+    background-position: -400px -154px;
     background-repeat: repeat, no-repeat;
   }
   .section3 > .img {
@@ -424,9 +421,6 @@
     margin-bottom: 22px;
     text-align: left;
   }
-  header h1 img {
-    height: 30px;
-  }
   .header_up {
     display: none;
   }
@@ -553,8 +547,8 @@
     margin-bottom: 140px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../img/main/sec3.png);
-    background-size: 200%;
-    background-position: -122px -154px;
+    background-size: 300%;
+    background-position: -400px -154px;
     background-repeat: repeat, no-repeat;
   }
   .section3 > .img {
@@ -701,62 +695,7 @@
     top: 57px;
     z-index: -998;
   }
-  footer .up {
-    height: 180px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    overflow: hidden;
-  }
-  footer .up .line {
-    display: block;
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: #c5c5c5;
-    top: 90px;
-  }
-  footer .up ul {
-    position: relative;
-    top: -29px;
-  }
-  footer .up ul > li {
-    flex-shrink: 0;
-  }
-  footer .up li a {
-    font-size: 14px;
-  }
-  footer .up .sns {
-    position: relative;
-    top: 34px;
-  }
-  footer .down {
-    flex-direction: column;
-    gap: 30px;
-    padding: 85px 20px;
-  }
-  footer .left {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 30px;
-  }
-  footer .right {
-    align-items: center;
-    text-align: center;
-  }
-  footer .right > div {
-    margin-bottom: 24px;
-    width: 100%;
-  }
-  footer .right a {
-    width: 100%;
-    padding: 15px 0;
-  }
-  footer .right span {
-    margin-bottom: 14px;
-  }
+
   .body_bg {
     width: 235px;
     top: -1414px;

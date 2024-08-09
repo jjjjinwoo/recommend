@@ -47,7 +47,6 @@ main > .write > img {
 header {
   position: sticky;
   top: -32px;
-  z-index: 999;
 }
 .header_down .hm > div:nth-child(3) > .line {
   width: 100%;

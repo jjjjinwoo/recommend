@@ -133,8 +133,10 @@
               style="display: flex; justify-content: flex-start; gap: 18px"
               class="icon"
             >
+              <a class="icon_notification" href="#"></a>
               <a class="icon_search" href="#"></a>
-              <a class="icon_menu" href="#"></a>
+              <a class="icon_notification_m" href="#"></a>
+              <a class="icon_menu_m" onclick="onSubmenuM()"></a>
             </li>
           </ul>
         </div>
@@ -429,5 +431,54 @@
         </div>
       </div>
     </footer>
+    <div class="sub_menu_m">
+      <div id="sub_menu_m_list">
+        <section class="sec1">
+          <div class="up">
+            <a class="chatbot">
+              <img src="./img/main/submenu_m/chatbot.svg" alt="chatbot" />
+              <span>챗봇 상담하기</span>
+            </a>
+            <button onclick="offSubmenuM()">
+              <img src="./img/main/submenu_m/x.svg" alt="X" />
+            </button>
+          </div>
+          <form class="down" action="#" method="post" name="member">
+            <input type="text" placeholder="검색어를 입력해주세요." />
+            <input type="submit" value="작성완료" />
+          </form>
+        </section>
+        <section class="sec2">
+          <a href="sub_news.html">
+            <span>뉴스</span>
+            <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+          </a>
+          <a href="sub_grade.html">
+            <span>게임평점</span>
+            <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+          </a>
+          <a href="sub_community.html">
+            <span>커뮤니티</span>
+            <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+          </a>
+          <a href="sub_video.html">
+            <span>영상</span>
+            <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+          </a>
+          <div></div>
+          <a href="#">
+            <span>게임추천</span>
+            <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+          </a>
+          <a href="#">
+            <span>핫딜</span>
+            <img src="./img/main/submenu_m/arrow.png" alt="arrow" />
+          </a>
+        </section>
+      </div>
+      <div id="sub_black"></div>
+    </div>
+    <!-- js -->
+    <script src="./js/basic.js"></script>
   </body>
 </html>

@@ -28,7 +28,6 @@
 header {
   position: sticky;
   top: -32px;
-  z-index: 999;
 }
 .header_down .hm > div:nth-child(1) > .line {
   width: 100%;
@@ -347,7 +346,8 @@ header {
   font-family: "Roboto", sans-serif;
   color: #b5b5b5;
   font-weight: 800;
-  width: fit-content;
+  min-width: 415px;
+  margin-right: 10px;
 }
 .section2 .title > .line {
   height: 1px;
@@ -355,6 +355,10 @@ header {
   background-color: #d8d8d8;
   position: relative;
   left: 7px;
+}
+.section2 .title .btn {
+  min-width: 85px;
+  margin-left: 14px;
 }
 .section2 .title button {
   cursor: pointer;

@@ -17,6 +17,118 @@
   display: none;
 }
 
+/* 모바일 서브메뉴 */
+.sub_menu_m {
+  position: fixed;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  overflow: hidden;
+}
+.sub_menu_m > div:first-child {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 332px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+  transform: translateX(332px);
+  transition: 0.5s;
+}
+.sub_menu_m .sec1 {
+  width: 100%;
+  height: 140px;
+  background-color: #f9f9f9;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.sub_menu_m .sec1 > .up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.sub_menu_m .up .chatbot {
+  display: flex;
+  align-items: center;
+}
+.sub_menu_m .up .chatbot span {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 8px;
+  position: relative;
+  top: -1px;
+}
+.sub_menu_m .up > button {
+  margin: 0;
+  border: none;
+  background: none;
+  padding: 0;
+}
+.sub_menu_m .sec1 > .down {
+  position: relative;
+}
+.sub_menu_m .sec1 > .down > input {
+  height: 40px;
+}
+.sub_menu_m .sec1 > .down > input:nth-child(1) {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  font-size: 14px;
+  font-family: "NanumSquare", sans-serif;
+}
+.sub_menu_m .sec1 > .down > input:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 40px 40px 0;
+  border: none;
+  font-size: 0;
+  display: block;
+  width: 48px;
+  background: url(../img/main/submenu_m/search.svg) no-repeat,
+    linear-gradient(to bottom, #ee0000, #d10000);
+  background-position: 15px 12px, 0;
+}
+.sub_menu_m .sec2 {
+  display: flex;
+  flex-direction: column;
+}
+.sub_menu_m .sec2 > a {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  font-weight: 700;
+}
+.sub_menu_m .sec2 > a:nth-child(4) {
+  border: none;
+}
+.sub_menu_m .sec2 > div {
+  height: 20px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+#sub_black {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
 /* 공통 영역 */
 
 * {
@@ -161,9 +273,23 @@ header {
   position: relative;
   transition: 0.3s;
 }
-header .icon a {
+header .icon a:nth-child(1),
+header .icon a:nth-child(2) {
   width: 32px;
   height: 32px;
+}
+header .icon a:nth-child(3),
+header .icon a:nth-child(4) {
+  display: none;
+  width: 28px;
+  height: 28px;
+}
+header .icon_notification {
+  background-image: url(../img/main/icon/notification.svg);
+}
+header .icon_notification:hover {
+  background-image: url(../img/main/icon/notification_h.svg);
+  transition: 0.3s;
 }
 header .icon_search {
   background-image: url(../img/main/icon/search.png);
@@ -172,13 +298,11 @@ header .icon_search:hover {
   background-image: url(../img/main/icon/search_h.png);
   transition: 0.3s;
 }
-header .icon_menu {
-  display: none;
-  background-image: url(../img/main/icon/menu.png);
+header .icon_notification_m {
+  background-image: url(../img/main/icon/notification_m.svg);
 }
-header .icon_menu:hover {
-  background-image: url(../img/main/icon/menu_h.png);
-  transition: 0.3s;
+header .icon_menu_m {
+  background-image: url(../img/main/icon/menu_m.svg);
 }
 .header_down ul > .hm {
   display: flex;
@@ -409,6 +533,7 @@ footer .left {
 footer .down p {
   color: #707070;
   line-height: 180%;
+  font-size: 14px;
 }
 footer .left > div {
   display: flex;
