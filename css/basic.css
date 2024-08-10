@@ -178,12 +178,12 @@ header {
   top: 86px;
   z-index: 998;
 }
+
 .header_con {
   width: 100%;
   height: 118px;
   position: absolute;
   z-index: 998;
-  top: -118px;
 }
 
 /* Header_up */
@@ -568,4 +568,252 @@ footer .right > div {
   display: flex;
   column-gap: 8px;
   margin-bottom: 12px;
+}
+
+/* 반응형 */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  header h1 img {
+    height: 32px;
+  }
+  .header_down ul > .hm {
+    gap: 34px;
+  }
+  .header_down:hover ul > .hm {
+    gap: 34px;
+  }
+  .header_down .hm .text {
+    font-size: 17px;
+  }
+  footer .up {
+    height: 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+  }
+  footer .up .line {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #c5c5c5;
+    top: 90px;
+  }
+  footer .up ul {
+    position: relative;
+    top: -29px;
+  }
+  footer .up .sns {
+    position: relative;
+    top: 34px;
+  }
+  footer .down {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer .left {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+  footer .right {
+    align-items: center;
+    text-align: center;
+  }
+  footer .right > div {
+    margin-bottom: 24px;
+  }
+  footer .right span {
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 563px) and (max-width: 1024px) {
+  header h1 img {
+    height: 26px;
+  }
+
+  .header_up {
+    display: none;
+  }
+  .header_up,
+  .header_down > ul {
+    padding: 0 20px;
+  }
+  .header_down > ul {
+    height: 74px;
+    border-bottom: none;
+  }
+  .header_down > ul > .hm {
+    display: none;
+  }
+  header .icon {
+    gap: 10px;
+  }
+  header .icon a:nth-child(1),
+  header .icon a:nth-child(2) {
+    display: none;
+  }
+  header .icon a:nth-child(3),
+  header .icon a:nth-child(4) {
+    display: block;
+  }
+  .header_con {
+    top: 0px;
+    position: fixed !important;
+  }
+  footer .up {
+    height: 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  footer .up .line {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #c5c5c5;
+    top: 90px;
+  }
+  footer .up ul {
+    position: relative;
+    top: -29px;
+  }
+  footer .up ul > li {
+    flex-shrink: 0;
+  }
+  footer .up li a {
+    font-size: 14px;
+  }
+  footer .up .sns {
+    position: relative;
+    top: 34px;
+  }
+  footer .down {
+    flex-direction: column;
+    gap: 30px;
+    padding: 85px 20px;
+  }
+  footer .left {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+  footer .right {
+    align-items: center;
+    text-align: center;
+  }
+  footer .right > div {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  footer .right a {
+    width: 100%;
+    padding: 15px 0;
+  }
+  footer .right span {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (max-width: 562px) {
+  header h1 img {
+    height: 26px;
+  }
+  .header_up {
+    display: none;
+  }
+  .header_up,
+  .header_down > ul {
+    padding: 0 20px;
+  }
+  .header_down > ul {
+    height: 74px;
+  }
+  .header_down > ul > .hm {
+    display: none;
+  }
+  header .icon {
+    gap: 10px;
+  }
+  header .icon a:nth-child(1),
+  header .icon a:nth-child(2) {
+    display: none;
+  }
+  header .icon a:nth-child(3),
+  header .icon a:nth-child(4) {
+    display: block;
+  }
+  .header_down > ul {
+    border-bottom: none;
+  }
+  .header_con {
+    top: 0px;
+    position: fixed;
+  }
+  footer .up {
+    height: 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  footer .up .line {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #c5c5c5;
+    top: 90px;
+  }
+  footer .up ul {
+    position: relative;
+    top: -29px;
+  }
+  footer .up ul > li {
+    flex-shrink: 0;
+  }
+  footer .up li a {
+    font-size: 14px;
+  }
+  footer .up .sns {
+    position: relative;
+    top: 34px;
+  }
+  footer .down {
+    flex-direction: column;
+    gap: 30px;
+    padding: 85px 20px;
+  }
+  footer .left {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+  footer .right {
+    align-items: center;
+    text-align: center;
+  }
+  footer .right > div {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  footer .right a {
+    width: 100%;
+    padding: 15px 0;
+  }
+  footer .right span {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
 }

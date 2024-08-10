@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/basic.css" />
     <link rel="stylesheet" href="./css/sub_news.css" />
     <link rel="icon" href="./img/main/favicon.ico" />
+    <link rel="stylesheet" href="./responsive_css/basic.css" />
   </head>
   <body>
     <!-- header -->
@@ -144,6 +145,17 @@
     </header>
     <!-- main -->
     <main>
+      <section id="category">
+        <div>
+          <a href="#">PS5</a>
+          <a href="#" class="hover">신작소개</a>
+          <a href="#" class="hover">국내뉴스</a>
+          <a href="#" class="hover">해외뉴스</a>
+          <a href="#" class="hover">특집</a>
+          <a href="#" class="hover">게임쇼</a>
+          <a href="#" class="hover">게임순위</a>
+        </div>
+      </section>
       <section class="section1">
         <div class="title_s">
           <div>
@@ -173,8 +185,8 @@
             <a href="#">
               <span>PREVIEW</span>
               <h3>
-                물 공급 안정화로 도시 개발 계획이 팽창 중!<br />
-                더 나은 도시 생활을 위한 새로운 기회가 열립니다.
+                도시 개발 계획이 팽창 중!<br />
+                생활을 위한 새로운 기회가 열립니다.
               </h3>
               <i></i>
             </a>
@@ -185,6 +197,7 @@
                   사회적 연대감 강화를 위한<br />
                   지역 자원 공유 프로젝트 대대적 발표!
                 </h3>
+                <i></i>
               </a>
               <div class="sub3">
                 <a href="#">
@@ -434,7 +447,7 @@
           </a>
         </section>
       </div>
-      <div id="sub_black"></div>
+      <div id="sub_black" onclick="offSubmenuM()"></div>
     </div>
     <!-- js -->
     <script src="./js/basic.js"></script>

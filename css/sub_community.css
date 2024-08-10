@@ -59,7 +59,7 @@ header {
 /* section1 */
 
 .section1 {
-  padding: 80px 160px 20px 160px;
+  padding: 80px 8.5vw 20px 8.5vw;
 }
 .section1 .content {
   display: flex;
@@ -82,6 +82,8 @@ header {
   margin-bottom: 30px;
 }
 .section1 .title h3 {
+  height: 30px;
+  overflow: hidden;
   font-size: 26px;
   font-weight: 800;
   margin-bottom: 0;
@@ -93,6 +95,8 @@ header {
 .section1 .title > span {
   font-size: 16px;
   color: #989898;
+  min-width: 100px;
+  text-align: right;
 }
 .section1 .title > span::before {
   content: "icon";
@@ -106,6 +110,8 @@ header {
   background-image: url(../img/sub/news/time_black.svg);
 }
 .section1 .text_con > p {
+  height: 50px;
+  overflow: hidden;
   line-height: 28px;
   color: #989898;
 }
@@ -166,7 +172,7 @@ header {
 /* section2 + section4 */
 
 .section2 {
-  padding: 0 160px 86px 160px;
+  padding: 0 8.5vw 86px 8.5vw;
   display: flex;
   column-gap: 60px;
 }
@@ -185,6 +191,8 @@ header {
   font-weight: 800;
   color: #222;
   transition: 0.3s;
+  height: 18px;
+  overflow: hidden;
 }
 .section2 .list .name:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -215,7 +223,7 @@ header {
   font-size: 16px;
   position: relative;
   top: -1px;
-  margin-right: 10px;
+  margin-right: 6px;
   color: #ee0000;
 }
 .section2 .title_s {
@@ -226,7 +234,7 @@ header {
 
 .section3 {
   background-color: #222;
-  margin: 0 160px 86px 160px;
+  margin: 0 8.5vw 86px 8.5vw;
   box-sizing: border-box;
   padding: 50px;
 }
@@ -237,6 +245,7 @@ header {
   background-image: url(../img/sub/community/more_w.svg);
 }
 .section3 .card_con {
+  gap: 32px;
   display: flex;
   justify-content: space-between;
 }

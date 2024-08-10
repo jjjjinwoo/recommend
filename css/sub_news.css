@@ -33,14 +33,56 @@ header {
   width: 100%;
   left: 0;
 }
-.header_con {
-  position: static;
+
+/* 카테고리 */
+
+#category {
+  display: none;
+  padding: 86px 0;
+}
+#category > div {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+}
+#category div > a {
+  width: 156px;
+  height: 64px;
+  border: 1px solid #d4d4d4;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 64px;
+  color: #222222;
+  transition: 0.3s;
+}
+#category div > a:nth-child(1) {
+  background-color: #222222;
+  color: white;
+  border-radius: 50px 0 0 50px;
+}
+#category div > a:nth-child(2) {
+  left: -1px;
+}
+#category div > a:nth-child(3) {
+  left: -2px;
+}
+#category div > a:nth-child(4) {
+  left: -3px;
+}
+#category div > a:nth-child(5) {
+  left: -4px;
+  border-radius: 0 50px 50px 0;
+}
+#category .hover:hover {
+  background-color: #f5f5f5;
 }
 
 /* section1 */
 
 .section1 {
-  padding: 80px 160px 100px 160px;
+  padding: 170px 8.5vw 100px 8.5vw;
 }
 .section1 .title_s h2 {
   margin-right: 20px;
@@ -136,6 +178,8 @@ header {
   font-size: 14px;
 }
 .section1 .main > h3 {
+  height: 94px;
+  overflow: hidden;
   font-size: 30px;
   font-weight: 700;
   text-align: left;
@@ -145,6 +189,7 @@ header {
   color: white;
 }
 .section1 .main > i {
+  opacity: 50%;
   display: block;
   width: 12px;
   height: 12px;
@@ -203,17 +248,25 @@ header {
   margin-bottom: 0;
   margin-top: 6px;
   color: white;
+  height: 66px;
+  overflow: hidden;
 }
-.section1 .sub > a:first-child > i {
+.section1 .sub2 > a:first-child > i {
+  display: none;
+}
+.section1 .sub > a:first-child > i,
+.section1 .sub2 > a:first-child > i {
   display: block;
   width: 12px;
   height: 12px;
   background-image: url(../img/sub/news/time.svg);
   float: right;
   position: absolute;
-  right: 118px;
+  right: 122px;
+  bottom: 30px;
 }
-.section1 .sub > a:first-child > i::before {
+.section1 .sub > a:first-child > i::before,
+.section1 .sub2 > a:first-child > i::before {
   content: "2024.07.22";
   color: white;
   position: relative;
@@ -268,6 +321,8 @@ header {
   margin-bottom: 0;
   margin-top: 6px;
   color: white;
+  height: 54px;
+  overflow: hidden;
 }
 
 /* section1_article4, section1_article5 */
@@ -287,7 +342,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 146px;
   position: relative;
   column-gap: 20px;
   filter: brightness(0.5);
@@ -322,16 +377,19 @@ header {
   margin-bottom: 0;
   margin-top: 6px;
   color: white;
+  height: 54px;
+  overflow: hidden;
 }
 
 /* section2 */
 
 .section2 {
-  padding: 52px 160px 72px 160px;
+  padding: 52px 8.5vw 72px 8.5vw;
   background-color: #f3f3f3;
   box-sizing: border-box;
   height: 410px;
   position: relative;
+  overflow: hidden;
 }
 .section2 .title {
   display: flex;
@@ -408,7 +466,7 @@ header {
   padding: 6px 8px;
   width: fit-content;
   line-height: 1;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 .section2 .card_con .text {
   display: flex;
@@ -431,7 +489,7 @@ header {
 /* section3 */
 
 .section3 {
-  padding: 80px 160px 20px 160px;
+  padding: 80px 8.5vw 20px 8.5vw;
 }
 .section3 .content {
   display: flex;
@@ -458,6 +516,8 @@ header {
   font-weight: 800;
   margin-bottom: 0;
   transition: 0.3s;
+  height: 39px;
+  overflow: hidden;
 }
 .section3 .content:hover .title > h3 {
   background-color: rgba(0, 0, 0, 0.1);
@@ -473,6 +533,8 @@ header {
 .section3 .title > span {
   font-size: 16px;
   color: #989898;
+  min-width: 100px;
+  text-align: right;
 }
 .section3 .title > span::before {
   content: "icon";
@@ -486,13 +548,15 @@ header {
   background-image: url(../img/sub/news/time_black.svg);
 }
 .section3 .text_con > p {
+  height: 56px;
+  overflow: hidden;
   line-height: 28px;
   color: #989898;
 }
 .section3 .line {
   height: 1px;
   width: 100%;
-  background-color: #ddd;
+  border-bottom: 1px solid #ddd;
   margin: 50px 0;
 }
 .section3 .list {
@@ -513,4 +577,222 @@ header {
 #article_img4 {
   background-image: url(../img/sub/news/article/4.png);
   background-size: cover;
+}
+
+/* 반응형 */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .section1 .sub > a:first-child > i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title_s {
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+  .title_s h2 {
+    font-size: 18px;
+  }
+  .more {
+    transform: scale(0.8);
+  }
+  #category {
+    display: block;
+    padding: 0;
+    padding-top: 73px;
+    position: fixed;
+    background-color: white;
+    z-index: 900;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  #category > div {
+    margin: 0;
+    margin-left: 20px;
+  }
+  #category div > a {
+    white-space: nowrap;
+    width: auto;
+    height: auto;
+    padding: 16px;
+    border: none;
+    line-height: 1;
+    color: #9a9a9a;
+    font-weight: 700;
+  }
+  #category div > a:nth-child(1) {
+    background-color: white;
+    color: #222;
+    border-radius: 0;
+    border-bottom: 3px solid #ffca0f;
+    font-weight: 800;
+  }
+  #category div > a:nth-child(2) {
+    left: 0;
+  }
+  #category div > a:nth-child(3) {
+    left: 0;
+  }
+  #category div > a:nth-child(4) {
+    left: 0;
+  }
+  #category div > a:nth-child(5) {
+    left: 0px;
+    border-radius: 0;
+  }
+  .section1 {
+    padding: 140px 20px 40px 20px;
+  }
+  .section1 .title_s > div:first-child {
+    justify-content: space-between;
+  }
+  .section1 .con {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .section1 .main {
+    min-height: 212px;
+  }
+  .section1 .main,
+  .section1 .sub > a:first-child,
+  .section1 .sub2,
+  .section1 .sub2 > a:first-child {
+    flex: 1 1;
+    height: 212px;
+  }
+  .section1 .main > h3,
+  .section1 .sub > a:first-child > h3,
+  .section1 .sub2 > a:first-child > h3 {
+    font-size: 15px;
+    height: 44px;
+    margin: 4px 0;
+  }
+  .section1 .main > span,
+  .section1 .sub > a:first-child > span,
+  .section1 .sub2 > a:first-child > span {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .section1 .sub > a:first-child > i,
+  .section1 .sub2 > a:first-child > i {
+    position: static;
+  }
+  .section1 .main > i,
+  .section1 .sub > a:first-child > i,
+  .section1 .sub2 > a:first-child > i {
+    transform: scale(0.8);
+  }
+  .section1 .main > i::before,
+  .section1 .sub > a:first-child > i::before,
+  .section1 .sub2 > a:first-child > i::before {
+    font-size: 12px;
+    top: -3px;
+  }
+  .section1 .sub > a:first-child {
+    box-sizing: content-box;
+    padding: 0;
+  }
+  .section1 .sub > a:first-child > span,
+  .section1 .sub > a:first-child > h3 {
+    margin-left: 24px;
+  }
+  .section1 .sub > a:first-child > i {
+    margin-left: 24px;
+    margin-bottom: 26px;
+  }
+  .section1 .sub {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+  .section1 .hot_search {
+    order: -1;
+    width: 100%;
+  }
+  .section1 .hot_search > span:first-child {
+    display: none;
+  }
+  .section1 .hot_search > span:nth-child(2) {
+    font-size: 14px;
+  }
+  .section1 .hot_search > span:nth-child(3) {
+    font-size: 14px;
+  }
+  .section1 .sub3 {
+    display: none;
+  }
+  .section2 {
+    padding: 30px 20px 60px 20px;
+    height: 300px;
+  }
+  .section2 .title > h2 {
+    font-size: 18px;
+    min-width: 253px;
+  }
+  .section2 .title .btn {
+    transform: scale(0.8);
+  }
+  .section2 .card_con {
+    top: 84px;
+    column-gap: 20px;
+  }
+
+  .section2 .card_con > div {
+    width: 292px;
+    height: 170px;
+  }
+  .section2 .card_con span {
+    font-size: 14px;
+  }
+  .section3 {
+    padding: 30px 20px;
+  }
+  .section3 .title_s {
+    flex-direction: row;
+    align-items: center;
+  }
+  .section3 .img {
+    min-width: 74px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .section3 .title > h3 {
+    font-size: 13px;
+    height: auto;
+    overflow: auto;
+    line-height: 22px;
+    text-align: left;
+  }
+  #new_article::before {
+    font-size: 10px;
+  }
+  .section3 .text_con > p {
+    display: none;
+  }
+  .section3 .line {
+    margin: 20px 0;
+  }
+  .section3 .title {
+    margin-bottom: 0;
+  }
+  .section3 .title > span {
+    font-size: 12px;
+    min-width: 78px;
+  }
+  .section3 .title > span::before {
+    transform: scale(0.8);
+    top: 0px;
+  }
+  .section3 .list {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section1 .sub2 {
+    display: none;
+  }
 }
