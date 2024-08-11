@@ -62,6 +62,7 @@ header {
 /* section1 */
 
 .section1 {
+  display: block !important;
   padding: 86px 0;
 }
 .section1 > div {

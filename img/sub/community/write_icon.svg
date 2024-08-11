@@ -1,4 +1,19 @@
-<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M30.0837 0.927338L37.0729 7.91656L8.57284 36.4151H1.58496V29.4273L30.0837 0.927338ZM24.5422 10.9475L4.75163 30.739V33.2484H7.26121L27.0527 13.458L24.5422 10.9475ZM29.2919 11.2189L26.7814 8.70831L30.0837 5.40573L32.5944 7.9165L29.2919 11.2189Z" fill="white"/>
-<path d="M36.4165 36.4165H17.4165V33.2498H36.4165V36.4165Z" fill="white"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.4, SVG Export Plug-In . SVG Version: 9.03 Build 54784)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 38 38" style="enable-background:new 0 0 38 38;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-miterlimit:10;}
+</style>
+<g id="레이어_1" class="st0">
+	<rect class="st1" width="38" height="38"/>
+</g>
+<g id="레이어_2">
+	<polygon class="st2" points="29.4,4 4.3,29.1 4.3,33.7 9,33.7 34,8.7 	"/>
+	<line class="st2" x1="24.1" y1="9.3" x2="28.8" y2="13.9"/>
+	<line class="st3" x1="17.5" y1="33.7" x2="33.3" y2="33.7"/>
+</g>
 </svg>
