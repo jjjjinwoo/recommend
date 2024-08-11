@@ -1,12 +1,16 @@
 @charset "utf-8";
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
 .inner {
   width: 616px;
-  margin: 0 auto;
-  margin-top: 3vw;
-  border: 1px solid #dddddd;
-  padding: 50px;
+  padding: 80px;
   box-sizing: border-box;
+  margin: auto;
 }
 
 /* logo */
@@ -21,6 +25,7 @@
 
 .navi {
   display: flex;
+  margin: 0 40px;
 }
 .navi > a {
   width: 100%;
@@ -158,4 +163,11 @@ form .down .line {
 .sns > .btn > a:nth-child(4) {
   background-image: url(../img/sub/login/icon/apple.svg);
   background-position: 19px 15px;
+}
+
+@media screen and (max-width: 586px) {
+  .inner {
+    width: 616px;
+    padding: 40px 20px;
+  }
 }

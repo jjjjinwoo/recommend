@@ -407,6 +407,9 @@ header {
     overflow: hidden;
     gap: 14px;
   }
+  .section2:last-child > div:nth-child(2) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
