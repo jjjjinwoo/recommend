@@ -23,7 +23,7 @@
   background-image: url(../img/sub/news/more_h.svg);
 }
 .line {
-  width: 1600px;
+  width: 83vw;
   height: 1px;
   background-color: #ddd;
   margin: 50px auto;
@@ -54,6 +54,12 @@
   background-image: url(../img/main/btn/control_r_h.svg);
 }
 
+/* 모바일 서브메뉴 */
+
+.sub_menu_m .sec2 {
+  padding: 0 !important;
+}
+
 /* header */
 
 header {
@@ -68,21 +74,27 @@ header {
 /* section */
 
 section {
-  padding: 0 160px;
+  padding: 0 8.5vw;
 }
 section .card_con {
   display: flex;
   justify-content: space-between;
+  gap: 32px;
+  overflow: hidden;
+}
+section .card {
+  flex: 1 1;
 }
 section .card .image {
   display: block;
-  width: 376px;
   height: 212px;
   background-color: #ddd;
   background-size: cover;
 }
 section .card > a {
   transition: 0.3s;
+  height: 20px;
+  overflow: hidden;
 }
 section .card > a:nth-child(2) {
   color: #222;
@@ -104,6 +116,7 @@ section .text_con {
   column-gap: 6px;
   position: relative;
   left: 2px;
+  white-space: nowrap;
 }
 section .text_con > i {
   width: 18px;
@@ -126,7 +139,7 @@ section .text_con > div {
 /* section1 */
 
 .section1 {
-  padding: 86px 160px 0 160px;
+  padding-top: 168px;
 }
 .section1 .card:nth-child(1) .image {
   background-image: url(../img/sub/video/thumbnail/1.jpg);
@@ -174,7 +187,7 @@ section .text_con > div {
 /* section3 */
 
 .section3 {
-  padding: 0 160px 50px 160px;
+  padding-bottom: 50px;
 }
 .section3 .card_con {
   margin-bottom: 50px;
@@ -202,4 +215,87 @@ section .text_con > div {
 }
 .section3 .card_con:nth-child(3) .card:nth-child(4) .image {
   background-image: url(../img/sub/video/thumbnail/2.jpg);
+}
+
+/* 반응형 */
+
+@media screen and (max-width: 1024px) {
+  .line {
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px auto;
+  }
+  .more {
+    transform: scale(0.8);
+  }
+  .title_s {
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .title_s h2 {
+    font-size: 18px;
+  }
+  .title_s button {
+    transform: scale(0.8);
+  }
+  .title_s button:nth-child(1) {
+    position: relative;
+    right: -16px;
+  }
+  section {
+    padding: 0 20px;
+  }
+  section .text_con > span {
+    font-size: 13px;
+  }
+  section .card .image {
+    height: 150px;
+    min-width: 266px;
+  }
+  section .card > a {
+    height: 14px;
+  }
+  section .card > a:nth-child(2) {
+    font-size: 14px;
+  }
+  section .card_con {
+    gap: 14px;
+  }
+  section .card_con:nth-child(3) {
+    display: none;
+  }
+  section .text_con > span {
+    font-size: 12px;
+  }
+  section .card > a:nth-child(2) {
+    margin: 16px 0 8px 0;
+  }
+  .section1 {
+    padding-top: 142px;
+  }
+  .section1 .card {
+    flex-grow: 1;
+    min-width: 320px;
+  }
+  .section1 .card_con {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .section1 .card > a:nth-child(2) {
+    font-size: 16px;
+    margin: 18px 0 6px 0;
+    height: 20px;
+  }
+  .section1 .card .image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .section3 .card_con {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 499px) {
 }

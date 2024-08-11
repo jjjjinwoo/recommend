@@ -34,7 +34,7 @@ main > .write {
   width: 100px;
   height: 100px;
   background-color: #222;
-  /* border: 1px solid #3a3a3a; */
+  border: 1px solid white;
   z-index: 999;
 }
 main > .write > img {
@@ -300,6 +300,15 @@ header {
 @media screen and (max-width: 1024px) {
   main {
     background-color: #f9f9f9;
+  }
+  main > .write {
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    bottom: 24px;
+  }
+  main > .write > img {
+    padding: 20px;
   }
   .section1 .title {
     margin-bottom: 0;
