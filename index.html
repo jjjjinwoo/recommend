@@ -11,6 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/slick/slick.css" />
+    <link rel="stylesheet" href="./css/slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/basic.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" href="./img/main/favicon.ico" />
@@ -170,7 +172,7 @@
             </div>
             <h2>
               <a href="#"
-                >“조회수 3000만회” 슈퍼마리오 원더…<br />
+                >“조회수 3000만회” 슈퍼마리오 원더<br />
                 이젠 한국이 ‘역수입’ 한다</a
               >
             </h2>
@@ -183,14 +185,11 @@
               style="height: 320px"
             />
           </div>
-          <div class="img">
-            <div class="slide">
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-            </div>
+          <div class="slide">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
           </div>
           <button href="#" id="챗봇">챗봇 상담하기</button>
         </section>
@@ -576,5 +575,21 @@
     </div>
     <!-- js -->
     <script src="./js/basic.js"></script>
+    <!-- jquery -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="./js/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slide").slick({
+          autoplay: true,
+          autoplaySpeed: 2500,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          speed: 2000,
+          dots: true,
+        });
+      });
+    </script>
   </body>
 </html>

@@ -24,6 +24,7 @@
 /* section1 - bar */
 
 .section1 .bar {
+  opacity: 0;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -64,6 +65,7 @@
   margin-bottom: 60px;
   animation-name: mt1;
   animation-duration: 1s;
+  animation-delay: 0.1s;
 }
 @keyframes mt1 {
   from {
@@ -76,22 +78,10 @@
   }
 }
 #main_control1 {
-  cursor: pointer;
-  background-image: url(../img/main/btn/control_w_l.png);
-  transition: 0.3s;
-}
-#main_control1:hover {
-  background-image: url(../img/main/btn/control_w_l_h.png);
-  transition: 0.3s;
+  background: transparent;
 }
 #main_control2 {
-  cursor: pointer;
-  background-image: url(../img/main/btn/control_w_r.png);
-  transition: 0.3s;
-}
-#main_control2:hover {
-  background-image: url(../img/main/btn/control_w_r_h.png);
-  transition: 0.3s;
+  background: transparent;
 }
 .section1 .up > span {
   color: #ffca0f;
@@ -170,29 +160,17 @@
 
 /* section1 - img */
 
-.section1 > .img {
-  min-height: 844px;
-  display: flex;
-  overflow: hidden;
+.section1 > .slide {
   position: absolute;
   left: 0;
   top: 0;
-}
-.section1 > .img::after {
-  content: "blackbox";
-  font-size: 0;
-  display: inline-block;
-  position: absolute;
-  width: 835px;
-  height: 845px;
-  background-image: url(../img/main/blackbox.svg);
-}
-.section1 > .img > .slide {
-  display: flex;
-  animation-name: slide;
+  overflow: hidden;
+  width: 100vw;
+  min-height: 844px;
+  /* animation-name: slide;
   animation-delay: 3s;
   animation-duration: 30s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 @keyframes slide {
   0% {
@@ -226,44 +204,32 @@
     transform: translateX(-80%);
   }
 }
-.section1 > .img > div > a {
+.slick-slide {
+  display: block;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transition: 0.5s;
+  min-height: 844px;
+  position: relative;
+  left: -1px;
 }
-.section1 > .img > div > a:hover {
+.slick-slide:hover {
   filter: brightness(0.8);
 }
-.section1 > .img > div a:nth-child(1) {
+.slick-slide:nth-child(2),
+.slick-slide:nth-child(6) {
   background-image: url(../img/main/bg/1.png);
-  /* animation-name: main_motion; */
-  animation-duration: 3s;
 }
-/* @keyframes main_motion {
-  from {
-    background-size: 110vw;
-    background-position: -20px -20px;
-    filter: brightness(0.4);
-  }
-  to {
-    background-size: 100vw;
-    background-position: 0px 0px;
-    filter: brightness(1);
-  }
-} */
-.section1 > .img > div a:nth-child(2) {
+.slick-slide:nth-child(3) {
   background-image: url(../img/main/bg/2.png);
 }
-.section1 > .img > div a:nth-child(3) {
+.slick-slide:nth-child(4) {
   background-image: url(../img/main/bg/3.png);
 }
-.section1 > .img > div a:nth-child(4) {
+.slick-slide:nth-child(5),
+.slick-slide:nth-child(1) {
   background-image: url(../img/main/bg/4.png);
-}
-.section1 > .img > div a:nth-child(5) {
-  background-image: url(../img/main/bg/1.png);
 }
 #챗봇 {
   cursor: pointer;
@@ -958,9 +924,6 @@
     justify-content: space-between;
     flex-direction: column;
   }
-  .section1 > .img::after {
-    left: -100px;
-  }
   .section1 .control {
     transform: scale(0.8);
   }
@@ -995,7 +958,7 @@
     font-size: 14px;
     margin-top: 0;
   }
-  .section1 > .img {
+  .section1 > .slide {
     min-height: 100%;
   }
   .title > button {
@@ -1300,6 +1263,9 @@
   .section1 .text h2 > a {
     font-size: 22px;
     line-height: 36px;
+    display: block;
+    height: 64px;
+    overflow: hidden;
   }
   .section1 .text {
     top: auto;
@@ -1322,6 +1288,7 @@
   }
   .section1 .up > span {
     font-size: 14px;
+    margin-left: 0;
   }
   .section1 .text .number > span {
     font-size: 14px;
