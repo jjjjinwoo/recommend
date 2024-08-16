@@ -868,7 +868,7 @@
     transform: translateY(30px);
     transition: 0.5s;
   }
-  .section3 > .img {
+  .scrollYet2 {
     transition: 0.5s;
     opacity: 0;
     transform: translateX(-50px);

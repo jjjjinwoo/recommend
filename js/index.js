@@ -74,3 +74,46 @@ const title5 = document.querySelector(".section5 .title");
 const videoImage1 = document.querySelector(".section5 #videoImage1");
 const videoImage2 = document.querySelector(".section5 #videoImage2");
 const videoImage3 = document.querySelector(".section5 #videoImage3");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 2900) {
+    title5.classList.add("scrollArrive");
+    setTimeout(function () {
+      videoImage1.classList.add("scrollArrive");
+    }, 200);
+    setTimeout(function () {
+      videoImage2.classList.add("scrollArrive");
+    }, 400);
+    setTimeout(function () {
+      videoImage3.classList.add("scrollArrive");
+    }, 600);
+  }
+});
+
+const title6 = document.querySelector(".section6 h3");
+const table6 = document.querySelector(".section6 table");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 3800) {
+    title6.classList.add("scrollArrive");
+    setTimeout(function () {
+      table6.classList.add("scrollArrive");
+    }, 200);
+  }
+});
+
+const sec8_1 = document.querySelector(".section8 .high");
+const sec8_2 = document.querySelector(".section8 > span");
+const sec8_3 = document.querySelector(".section8 img");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 5000) {
+    sec8_1.classList.add("scrollArrive");
+    setTimeout(function () {
+      sec8_2.classList.add("scrollArrive");
+    }, 200);
+    setTimeout(function () {
+      sec8_3.classList.add("scrollArrive");
+    }, 400);
+  }
+});
