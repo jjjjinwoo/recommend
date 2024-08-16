@@ -8,6 +8,8 @@ const cardCon2_2 = document.querySelector("#cardCon2_2");
 const cardCon2_3 = document.querySelector("#cardCon2_3");
 const cardCon2_4 = document.querySelector("#cardCon2_4");
 
+console.log(document.querySelector(".section2 .card:nth-child(13)"));
+
 document.addEventListener("scroll", () => {
   if (window.scrollY > 700) {
     title2.classList.add("scrollArrive");
@@ -107,7 +109,7 @@ const sec8_2 = document.querySelector(".section8 > span");
 const sec8_3 = document.querySelector(".section8 img");
 
 document.addEventListener("scroll", () => {
-  if (window.scrollY > 5000) {
+  if (window.scrollY > 4900) {
     sec8_1.classList.add("scrollArrive");
     setTimeout(function () {
       sec8_2.classList.add("scrollArrive");

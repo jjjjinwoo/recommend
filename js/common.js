@@ -67,6 +67,7 @@ $(document).ready(function () {
     pauseOnHover: false,
     speed: 2000,
     dots: true,
+    asNavFor: "#textSlide",
   });
   $(".section2 .card_con").slick({
     slidesToShow: 4,
@@ -118,12 +119,18 @@ $(document).ready(function () {
   $(".section5 .card_con").slick({
     slidesToShow: 3,
   });
+  $("#textSlide").slick({
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".slide",
+  });
 });
 
-$("#main_control1").click(function () {
+$("#main_control2").click(function () {
   $(".slide").slick("slickNext");
 });
-$("#main_control2").click(function () {
+$("#main_control1").click(function () {
   $(".slide").slick("slickPrev");
 });
 
@@ -140,24 +147,3 @@ $(".section5 .next").click(function () {
 $(".section5 .prev").click(function () {
   $(".section5 .card_con").slick("slickPrev");
 });
-
-//카테고리
-
-// const tabList = document.querySelectorAll("#category div a");
-
-// function onCategory(i) {
-//   tabList[i].className = "is_on";
-// }
-
-// tabList[2].addEventListener("click", function () {
-//   tabList[2].classList.add("is_on");
-// });
-
-// for (var i = 0; i < tabList.length; i++) {
-//   tabList[i].addEventListener("click", function () {
-//     for (var j = 0; j < tabList.length; j++) {
-//       tabList[j].classList.remove("is_on");
-//     }
-//     this.classList.add("is_on");
-//   });
-// }

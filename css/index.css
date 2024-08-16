@@ -75,18 +75,17 @@
 /* section1 - text */
 
 .section1 .text {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-  top: 180px;
-  position: relative;
+  width: 788px;
+  height: 227px;
+  position: absolute;
+  top: 366px;
   z-index: 100;
 }
 .section1 .text .up {
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 44px;
   animation-name: mt1;
   animation-duration: 1s;
   animation-delay: 0.1s;
@@ -118,7 +117,7 @@
   background: transparent;
   background-image: url(../img/main/btn/control_w_r_h.png);
 }
-.section1 .up > span {
+.section1 .text .up > span {
   color: #ffca0f;
   font-size: 18px;
   font-weight: bold;
@@ -163,13 +162,13 @@
   line-height: 78.5px;
   transition: 0.3s;
 }
-.section1 .text h2 > a:hover {
+.section1 .text h2 a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .section1 .scroll_down {
-  position: relative;
-  top: 310px;
-  left: 0px;
+  position: absolute;
+  top: 410px;
+  right: 150px;
   opacity: 50%;
   transition: 0.5s;
   animation-name: scroll_down;
@@ -191,6 +190,19 @@
   to {
     opacity: 50%;
   }
+}
+.section1 .fake {
+  z-index: 101;
+}
+.section1 .fake span {
+  opacity: 0;
+}
+.section1 .fake h2 {
+  opacity: 0;
+}
+#textSlide #main_control1,
+#textSlide #main_control2 {
+  opacity: 0;
 }
 
 /* section1 - img */
@@ -873,6 +885,17 @@
     opacity: 0;
     transform: translateX(-50px);
   }
+  .section2 .card:nth-child(13),
+  .section2 .card:nth-child(14),
+  .section2 .card:nth-child(15),
+  .section2 .card:nth-child(16),
+  .section5 .slick-slide:nth-child(10),
+  .section5 .slick-slide:nth-child(11),
+  .section5 .slick-slide:nth-child(12),
+  .section5 .slick-slide:nth-child(13) {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -959,6 +982,9 @@
 }
 
 @media screen and (min-width: 563px) and (max-width: 1024px) {
+  .scrollArrive {
+    transform: none !important;
+  }
   h3 {
     font-size: 18px;
     margin-bottom: 28px;
@@ -1291,6 +1317,9 @@
 }
 
 @media screen and (max-width: 562px) {
+  .scrollArrive {
+    transform: none !important;
+  }
   h3 {
     font-size: 18px;
     margin-bottom: 22px;
