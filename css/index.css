@@ -1,9 +1,33 @@
 @charset "utf-8";
 
+/* scrollArrive */
+.scrollArrive {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+}
+
+/* container */
+
+.container {
+  animation-name: mainStart;
+  animation-duration: 0.5s;
+}
+@keyframes mainStart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* header */
 
 .header_con {
   top: -118px;
+}
+.header_down > ul > h1 > a {
+  cursor: pointer;
 }
 
 /* section1 */
@@ -78,10 +102,21 @@
   }
 }
 #main_control1 {
-  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  background-image: url(../img/main/btn/control_w_l.png);
+}
+#main_control1:hover {
+  background-image: url(../img/main/btn/control_w_l_h.png);
 }
 #main_control2 {
+  cursor: pointer;
+  transition: 0.3s;
+  background-image: url(../img/main/btn/control_w_r.png);
+}
+#main_control2:hover {
   background: transparent;
+  background-image: url(../img/main/btn/control_w_r_h.png);
 }
 .section1 .up > span {
   color: #ffca0f;
@@ -166,7 +201,7 @@
   top: 0;
   overflow: hidden;
   width: 100vw;
-  min-height: 844px;
+  height: 100%;
   /* animation-name: slide;
   animation-delay: 3s;
   animation-duration: 30s;
@@ -204,31 +239,30 @@
     transform: translateX(-80%);
   }
 }
-.slick-slide {
+.slide a {
   display: block;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 844px;
   position: relative;
   left: -1px;
 }
-.slick-slide:hover {
+.slide a:hover {
   filter: brightness(0.8);
 }
-.slick-slide:nth-child(2),
-.slick-slide:nth-child(6) {
+.slide a:nth-child(2),
+.slide a:nth-child(6) {
   background-image: url(../img/main/bg/1.png);
 }
-.slick-slide:nth-child(3) {
+.slide a:nth-child(3) {
   background-image: url(../img/main/bg/2.png);
 }
-.slick-slide:nth-child(4) {
+.slide a:nth-child(4) {
   background-image: url(../img/main/bg/3.png);
 }
-.slick-slide:nth-child(5),
-.slick-slide:nth-child(1) {
+.slide a:nth-child(5),
+.slide a:nth-child(1) {
   background-image: url(../img/main/bg/4.png);
 }
 #챗봇 {
@@ -272,6 +306,7 @@
   display: none;
 }
 .title > .prev {
+  /* opacity: 0 !important; */
   background: transparent url(../img/main/btn/control_l.svg) no-repeat;
   transition: 0.3s;
 }
@@ -279,6 +314,7 @@
   background: transparent url(../img/main/btn/control_l_h.svg) no-repeat;
 }
 .title > .next {
+  /* opacity: 0 !important; */
   background: transparent url(../img/main/btn/control_r.svg) no-repeat;
   transition: 0.3s;
 }
@@ -299,14 +335,15 @@
   background-color: #f2f2f2;
   display: flex;
   cursor: pointer;
+  margin: 0 auto;
 }
 .section2 .card > .box:hover {
   background-color: #e2e2e2;
 }
 .section2 .card > .box > .pick {
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: 0;
+  left: 0;
 }
 .section2 .card > .box > .game {
   margin: auto;
@@ -357,7 +394,9 @@
 .section2 .card > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   margin-bottom: 26px;
+  width: 310px;
 }
 .section2 .card .score {
   text-align: center;
@@ -379,6 +418,8 @@
   margin-top: 9px;
 }
 .section2 .card > div:nth-child(3) {
+  margin: 0 auto;
+  width: 310px;
   display: flex;
   justify-content: space-between;
 }
@@ -414,24 +455,6 @@
 }
 #critic_bar::before {
   width: 90px;
-}
-.section2 .blind {
-  position: absolute;
-  height: 100%;
-  width: 8.5vw;
-  background-color: #ffffff;
-  top: 0;
-  right: 0;
-  z-index: 2;
-}
-.section2 .blind2 {
-  position: absolute;
-  height: 100%;
-  width: 50px;
-  background-image: linear-gradient(to right, rgb(255, 255, 255, 0), white);
-  top: 0;
-  right: 8.5vw;
-  z-index: 2;
 }
 
 /* section3 */
@@ -629,7 +652,7 @@
 .section5 .card_con > a {
   width: fit-content;
 }
-.section5 .card_con > a:hover .img {
+.section5 .card_con a:hover .img {
   background-size: 160%;
   background-position: center;
 }
@@ -643,21 +666,58 @@
   background-position: center;
   transition: 0.3s;
 }
-.section5 .card_con > a:nth-child(1) > .img {
+.section5 .card_con a:nth-child(1) .img {
+  background-image: url(../img/main/video/4.png);
+}
+.section5 .card_con a:nth-child(2) .img {
+  background-image: url(../img/main/video/5.png);
+}
+.section5 .card_con a:nth-child(3) .img {
+  background-image: url(../img/main/video/6.png);
+}
+.section5 .card_con a:nth-child(4) .img {
   background-image: url(../img/main/video/1.png);
 }
-.section5 .card_con > a:nth-child(2) > .img {
+.section5 .card_con a:nth-child(5) .img {
   background-image: url(../img/main/video/2.png);
 }
-.section5 .card_con > a:nth-child(3) > .img {
+.section5 .card_con a:nth-child(6) .img {
   background-image: url(../img/main/video/3.png);
 }
+.section5 .card_con a:nth-child(7) .img {
+  background-image: url(../img/main/video/4.png);
+}
+.section5 .card_con a:nth-child(8) .img {
+  background-image: url(../img/main/video/5.png);
+}
+.section5 .card_con a:nth-child(9) .img {
+  background-image: url(../img/main/video/6.png);
+}
+.section5 .card_con a:nth-child(10) .img {
+  background-image: url(../img/main/video/1.png);
+}
+.section5 .card_con a:nth-child(11) .img {
+  background-image: url(../img/main/video/2.png);
+}
+.section5 .card_con a:nth-child(12) .img {
+  background-image: url(../img/main/video/3.png);
+}
+.section5 .card_con .img {
+  background-image: url(../img/main/video/1.png);
+}
+/* .section5 .card_con a:nth-child(2) > .img {
+  background-image: url(../img/main/video/2.png);
+}
+.section5 .card_con a:nth-child(3) > .img {
+  background-image: url(../img/main/video/3.png);
+} */
 .section5 .name {
   display: flex;
   color: white;
   justify-content: space-between;
   margin-top: 26px;
   align-items: center;
+  width: 666px;
 }
 .section5 .name h4 {
   font-size: 24px;
@@ -801,6 +861,19 @@
 }
 
 /* 반응형 */
+
+@media screen and (min-width: 1441px) and (max-width: 3000px) {
+  .scrollYet {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+  }
+  .section3 > .img {
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   header h1 img {
@@ -977,6 +1050,9 @@
   .section2 .card > .box {
     width: 186px;
     height: 272px;
+  }
+  .section2 .card > div:nth-child(2) {
+    width: 186px;
   }
   .section2 .card_con {
     column-gap: 14px;
@@ -1313,6 +1389,9 @@
   .section2 .card > .box {
     width: 122px;
     height: 160px;
+  }
+  .section2 .card > div:nth-child(2) {
+    width: 122px;
   }
   .section2 .card_con {
     column-gap: 14px;

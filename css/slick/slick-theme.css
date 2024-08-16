@@ -17,6 +17,27 @@
     url("./fonts/slick.svg#slick") format("svg");
 }
 /* Arrows */
+.section1 .slick-prev,
+.section1 .slick-next {
+  z-index: -1;
+  width: 36px;
+  height: 36px;
+  /* z-index: 900; */
+  background-color: transparent;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  bottom: 288px;
+  transition: 0.3s;
+  animation-name: mt1;
+  animation-duration: 1s;
+}
 .slick-prev,
 .slick-next {
   width: 36px;
@@ -25,22 +46,18 @@
   background-color: transparent;
   font-size: 0;
   line-height: 0;
-
   position: absolute;
-
   display: block;
-
   padding: 0;
-
   cursor: pointer;
-
   color: transparent;
   border: none;
   outline: none;
-  top: 393px;
+  bottom: 288px;
   transition: 0.3s;
   animation-name: mt1;
   animation-duration: 1s;
+  opacity: 0;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -132,9 +149,53 @@
   outline: none;
   background-color: rgb(255, 255, 255, 0.2);
 }
-.slick-dots li button:hover,
-.slick-dots li button:focus {
+.slick-dots li button:hover {
   background-color: white;
+}
+.slick-dots .slick-active button {
+  background-color: white;
+}
+
+/* 메인 섹션2 슬라이드 */
+
+.section2 .slick-prev {
+  left: calc(-285px + 8.5vw);
+  right: 8.5vw;
+  background-image: url(../../img/main/btn/control_l.svg);
+}
+.section2 .slick-next {
+  right: calc(-144px + 8.5vw);
+  background-image: url(../../img/main/btn/control_r.svg);
+}
+.section2 .slick-prev,
+.section2 .slick-next {
+  z-index: -1;
+  width: 36px;
+  height: 36px;
+  animation-name: null;
+  top: -101px;
+}
+
+/* 메인 섹션5 슬라이드 */
+
+.section5 .card_con {
+  width: 2000px;
+}
+.section5 .slick-track {
+  left: -50px;
+}
+.section5 .slick-list {
+  margin: 0 -50px;
+}
+.section5 .slick-slide {
+  margin: 0 50px;
+}
+.section5 .slick-prev,
+.section5 .slick-next {
+  width: 36px;
+  height: 36px;
+  top: -123px;
+  z-index: -1;
 }
 
 /* 반응형 */
@@ -146,10 +207,10 @@
   }
 }
 @media screen and (min-width: 563px) and (max-width: 1024px) {
-  .slick-prev,
-  .slick-next {
+  .section1 .slick-prev,
+  .section1 .slick-next {
     transform: scale(0.8);
-    top: 516px;
+    bottom: 143px;
   }
   .slick-prev {
     left: 20px;
@@ -157,10 +218,62 @@
   .slick-next {
     left: 122px;
   }
+  .section2 .slick-prev,
+  .section2 .slick-next {
+    transform: scale(0.8);
+    top: -64px;
+  }
+  .section2 .slick-prev {
+    left: -218px;
+    right: 0;
+  }
+  .section2 .slick-next {
+    right: -96px;
+  }
+  .section5 .card_con {
+    width: 1000px;
+  }
+  .section5 .slick-track {
+    left: 0;
+  }
+  .section5 .slick-list {
+    margin: 0 -14px;
+  }
+  .section5 .slick-slide {
+    margin: 0 14px;
+  }
 }
+
 @media screen and (max-width: 562px) {
-  .slick-prev,
-  .slick-next {
+  .section1 .slick-prev,
+  .section1 .slick-next {
+    transform: scale(0.8);
+    bottom: 143px;
     z-index: -1;
+  }
+  .section2 .slick-prev,
+  .section2 .slick-next {
+    transform: scale(0.8);
+    top: -58px;
+  }
+  .section2 .slick-prev {
+    left: auto;
+    right: 34px;
+  }
+  .section2 .slick-next {
+    right: -4px;
+    left: auto;
+  }
+  .section5 .card_con {
+    width: 1000px;
+  }
+  .section5 .slick-track {
+    left: 0;
+  }
+  .section5 .slick-list {
+    margin: 0 -14px;
+  }
+  .section5 .slick-slide {
+    margin: 0 14px;
   }
 }

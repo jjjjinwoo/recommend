@@ -13,9 +13,13 @@
     />
     <link rel="stylesheet" href="./css/slick/slick.css" />
     <link rel="stylesheet" href="./css/slick/slick-theme.css" />
-    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" href="./img/main/favicon.ico" />
+    <!-- jquery -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="./js/slick/slick.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -63,7 +67,7 @@
           <div class="header_down">
             <ul>
               <h1>
-                <a href="index.html"
+                <a onclick="toTop()"
                   ><img src="./img/main/LOGO.png" alt="logo"
                 /></a>
               </h1>
@@ -195,14 +199,14 @@
         </section>
         <!-- section2 -->
         <section class="section2">
-          <div class="title">
+          <div class="title scrollYet">
             <button type="button" class="prev">prev</button>
             <h3><span style="color: #ee0000">새</span>로 나온 신작 게임</h3>
             <button type="button" class="next">next</button>
           </div>
           <div class="card_con">
-            <div class="card">
-              <div class="box">
+            <div class="card scrollYet" id="cardCon2_1">
+              <a href="#" class="box">
                 <img class="pick" src="./img/main/icon/pick.svg" alt="pick" />
                 <img
                   class="pick_m"
@@ -210,7 +214,7 @@
                   alt="pick_m"
                 />
                 <img class="game" src="./img/main/game/1.png" alt="game1" />
-              </div>
+              </a>
               <div>
                 <div>
                   <p class="sub_name">닌텐도스위치</p>
@@ -236,10 +240,10 @@
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="box">
+            <div class="card scrollYet" id="cardCon2_2">
+              <a href="#" class="box">
                 <img class="game" src="./img/main/game/2.png" alt="game2" />
-              </div>
+              </a>
               <div>
                 <div>
                   <p class="sub_name">PS5 · XBOX</p>
@@ -265,10 +269,10 @@
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="box">
+            <div class="card scrollYet" id="cardCon2_3">
+              <a href="#" class="box">
                 <img class="game" src="./img/main/game/3.png" alt="game3" />
-              </div>
+              </a>
               <div>
                 <div>
                   <p class="sub_name">닌텐도스위치</p>
@@ -294,11 +298,11 @@
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="box">
+            <div class="card scrollYet" id="cardCon2_4">
+              <a href="#" class="box">
                 <img class="pick" src="./img/main/icon/pick.svg" alt="pick" />
                 <img class="game" src="./img/main/game/4.png" alt="game4" />
-              </div>
+              </a>
               <div>
                 <div>
                   <p class="sub_name">닌텐도스위치</p>
@@ -324,10 +328,10 @@
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="box">
+            <div class="card scrollYet">
+              <a href="#" class="box">
                 <img class="game" src="./img/main/game/5.png" alt="game5" />
-              </div>
+              </a>
               <div>
                 <div>
                   <p class="sub_name">PS5 · XBOX</p>
@@ -338,7 +342,95 @@
               <div>
                 <div class="score">
                   <p>평점</p>
-                  <p>92</p>
+                  <p>90</p>
+                </div>
+                <div class="line"></div>
+                <div class="score2_con">
+                  <div class="score2">
+                    <span>유저</span>
+                    <div class="bar"></div>
+                  </div>
+                  <div class="score2">
+                    <span>평론가</span>
+                    <div class="bar" id="critic_bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card scrollYet">
+              <a href="#" class="box">
+                <img class="game" src="./img/main/game/6.png" alt="game5" />
+              </a>
+              <div>
+                <div>
+                  <p class="sub_name">PS5 · XBOX</p>
+                  <p class="name">호그와트 레거시</p>
+                </div>
+                <a href="#" class="view">VIEW</a>
+              </div>
+              <div>
+                <div class="score">
+                  <p>평점</p>
+                  <p>76</p>
+                </div>
+                <div class="line"></div>
+                <div class="score2_con">
+                  <div class="score2">
+                    <span>유저</span>
+                    <div class="bar"></div>
+                  </div>
+                  <div class="score2">
+                    <span>평론가</span>
+                    <div class="bar" id="critic_bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#" class="box">
+                <img class="pick" src="./img/main/icon/pick.svg" alt="pick" />
+                <img class="game" src="./img/main/game/7.png" alt="game5" />
+              </a>
+              <div>
+                <div>
+                  <p class="sub_name">닌텐도 스위치</p>
+                  <p class="name">별의 커비 디스커버리</p>
+                </div>
+                <a href="#" class="view">VIEW</a>
+              </div>
+              <div>
+                <div class="score">
+                  <p>평점</p>
+                  <p>97</p>
+                </div>
+                <div class="line"></div>
+                <div class="score2_con">
+                  <div class="score2">
+                    <span>유저</span>
+                    <div class="bar"></div>
+                  </div>
+                  <div class="score2">
+                    <span>평론가</span>
+                    <div class="bar" id="critic_bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#" class="box">
+                <img class="game" src="./img/main/game/8.png" alt="game5" />
+              </a>
+              <div>
+                <div>
+                  <p class="sub_name">PS5 · XBOX</p>
+                  <p class="name">엘든링</p>
+                </div>
+                <a href="#" class="view">VIEW</a>
+              </div>
+              <div>
+                <div class="score">
+                  <p>평점</p>
+                  <p>84</p>
                 </div>
                 <div class="line"></div>
                 <div class="score2_con">
@@ -354,8 +446,6 @@
               </div>
             </div>
           </div>
-          <div class="blind"></div>
-          <div class="blind2"></div>
         </section>
         <!-- section3 -->
         <section class="section3">
@@ -363,7 +453,7 @@
             <img src="./img/main/sec3.png" alt="sec3_image" class="main" />
             <img src="./img/main/sec3_s.png" alt="sec3_sub" class="sub" />
           </div>
-          <div>
+          <div class="text_box scrollYet">
             <span>이걸 어떻게 깨지?</span>
             <h3>모두 함께 쓰는 게임 공략</h3>
             <a href="sub_community.html">
@@ -373,25 +463,39 @@
         </section>
         <!-- section4 -->
         <section class="section4">
-          <h3><span style="color: #0eb200">기</span>종별 게임 평점 보기</h3>
+          <h3 class="scrollYet">
+            <span style="color: #0eb200">기</span>종별 게임 평점 보기
+          </h3>
           <div class="shortcut">
-            <a href="sub_grade.html"><i></i><span>닌텐도 스위치</span></a>
-            <a href="sub_grade.html"><i></i><span>PS5</span></a>
-            <a href="sub_grade.html"><i></i><span>XBOX</span></a>
-            <a href="sub_grade.html"><i></i><span>PC</span></a>
-            <a href="sub_grade.html"><i></i><span>모바일</span></a>
-            <a href="sub_grade.html"><i></i><span>더보기</span></a>
+            <a class="scrollYet" id="shortcut1" href="sub_grade.html"
+              ><i></i><span>닌텐도 스위치</span></a
+            >
+            <a class="scrollYet" id="shortcut2" href="sub_grade.html"
+              ><i></i><span>PS5</span></a
+            >
+            <a class="scrollYet" id="shortcut3" href="sub_grade.html"
+              ><i></i><span>XBOX</span></a
+            >
+            <a class="scrollYet" id="shortcut4" href="sub_grade.html"
+              ><i></i><span>PC</span></a
+            >
+            <a class="scrollYet" id="shortcut5" href="sub_grade.html"
+              ><i></i><span>모바일</span></a
+            >
+            <a class="scrollYet" id="shortcut6" href="sub_grade.html"
+              ><i></i><span>더보기</span></a
+            >
           </div>
         </section>
         <!-- section5 -->
-        <section class="section5">
+        <section class="section5 scrollYet">
           <div class="title">
             <button type="button" class="prev">prev</button>
             <h3>지금 뜨는 인기 영상</h3>
             <button type="button" class="next">next</button>
           </div>
           <div class="card_con">
-            <a href="#">
+            <a href="#" id="videoImage1">
               <div class="img"></div>
               <div class="name">
                 <h4>액토즈 '블러드라인', 게임 홍보 영상 대공개!</h4>
@@ -401,14 +505,35 @@
             <a href="#">
               <div class="img"></div>
               <div class="name">
-                <h4>액토즈 '블러드라인', 게임 홍보 영상 대공개!</h4>
+                <h4>스타크래프트의 숨겨진 비밀 파헤치기!</h4>
                 <span>12,000</span>
               </div>
             </a>
             <a href="#">
               <div class="img"></div>
               <div class="name">
-                <h4>액토즈 '블러드라인', 게임 홍보 영상 대공개!</h4>
+                <h4>"완벽 가이드: 젤다에서 반드시 알아야 할 팁과 트릭"</h4>
+                <span>12,000</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="img"></div>
+              <div class="name">
+                <h4>초보자도 쉽게 배우는 슈퍼마리오 전략 및 공략</h4>
+                <span>12,000</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="img"></div>
+              <div class="name">
+                <h4>이벤트 하이라이트 특별한 순간들!</h4>
+                <span>12,000</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="img"></div>
+              <div class="name">
+                <h4>얻을 수 있는 숨겨진 아이템</h4>
                 <span>12,000</span>
               </div>
             </a>
@@ -574,22 +699,7 @@
       </div>
     </div>
     <!-- js -->
-    <script src="./js/basic.js"></script>
-    <!-- jquery -->
-    <script src="./js/jquery.min.js"></script>
-    <!-- slick -->
-    <script src="./js/slick/slick.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".slide").slick({
-          autoplay: true,
-          autoplaySpeed: 2500,
-          pauseOnFocus: false,
-          pauseOnHover: false,
-          speed: 2000,
-          dots: true,
-        });
-      });
-    </script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
