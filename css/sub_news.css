@@ -624,6 +624,7 @@ header {
   }
   .section1 .main {
     min-height: 212px;
+    padding: 24px;
   }
   .section1 .main,
   .section1 .sub > a:first-child,
@@ -693,6 +694,18 @@ header {
   .section1 .sub3 {
     display: none;
   }
+  .section1 .main > span,
+  .section1 .main > h3,
+  .section1 .main > i,
+  .section1 .sub > a:first-child > h3,
+  .section1 .sub > a:first-child > span,
+  .section1 .sub > a:first-child > i,
+  .section1 .sub2 > a:first-child > h3,
+  .section1 .sub2 > a:first-child > span,
+  .section1 .sub3 > a > h3,
+  .section1 .sub3 > a > span {
+    opacity: 1;
+  }
   .section2 {
     padding: 30px 20px 60px 20px;
     height: 300px;
@@ -709,10 +722,6 @@ header {
     column-gap: 20px;
     width: 1500px;
   }
-  /* #gameSchedule > div {
-    width: 292px;
-    height: 170px;
-  } */
   #gameSchedule .card {
     height: 170px;
   }
