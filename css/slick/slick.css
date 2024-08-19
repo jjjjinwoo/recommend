@@ -116,6 +116,15 @@
   margin: 0 20px;
 }
 
+/* 게임평점 서브페이지 */
+
+#gameList .slick-list {
+  margin: 0 -20px;
+}
+#gameList .slick-slide {
+  margin: 0 20px;
+}
+
 /* 반응형 */
 
 @media screen and (max-width: 1024px) {
@@ -123,6 +132,13 @@
     margin: 0 -10px;
   }
   #gameSchedule .slick-slide {
+    margin: 0 10px;
+  }
+
+  #gameList .slick-list {
+    margin: 0 -10px;
+  }
+  #gameList .slick-slide {
     margin: 0 10px;
   }
 }

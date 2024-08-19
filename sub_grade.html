@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/sub_grade.css" />
     <link rel="icon" href="./img/main/favicon.ico" />
+    <link rel="stylesheet" href="./css/slick/slick.css" />
+    <link rel="stylesheet" href="./css/slick/slick-theme.css" />
     <!-- 제이쿼리 -->
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick/slick.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -168,18 +171,18 @@
               />
               <p>*노란색 평점은 평론가 평점입니다.</p>
             </div>
-            <div>
-              <button></button>
-              <button></button>
+            <div class="game_list">
+              <button class="prev"></button>
+              <button class="next"></button>
             </div>
           </div>
-          <div class="list">
+          <div class="list" id="gameList">
             <div class="card_con">
               <div class="img">
                 <img src="./img/sub/grade/card1/1.png" alt="game1" />
                 <div class="line_s"></div>
               </div>
-              <a class="name" href="#">게임 타이틀 제목</a>
+              <a class="name" href="#">폴가이즈</a>
               <span>오늘 발매!</span>
             </div>
             <div class="card_con">
@@ -187,7 +190,7 @@
                 <img src="./img/sub/grade/card1/2.png" alt="game2" />
                 <div class="line_s"></div>
               </div>
-              <a class="name" href="#">게임 타이틀 제목</a>
+              <a class="name" href="#">모여봐요!동물의 숲</a>
               <span>1일전 발매!</span>
             </div>
             <div class="card_con">
@@ -195,7 +198,7 @@
                 <img src="./img/sub/grade/card1/3.png" alt="game3" />
                 <div class="line_s"></div>
               </div>
-              <a class="name" href="#">게임 타이틀 제목</a>
+              <a class="name" href="#">수박게임</a>
               <span>4일전 발매!</span>
             </div>
             <div class="card_con">
@@ -203,7 +206,7 @@
                 <img src="./img/sub/grade/card1/4.png" alt="game4" />
                 <div class="line_s"></div>
               </div>
-              <a class="name" href="#">게임 타이틀 제목</a>
+              <a class="name" href="#">슈퍼 커비 헌터즈</a>
               <span>4일전 발매!</span>
             </div>
             <div class="card_con">
@@ -211,7 +214,47 @@
                 <img src="./img/sub/grade/card1/5.png" alt="game5" />
                 <div class="line_s"></div>
               </div>
-              <a class="name" href="#">게임 타이틀 제목</a>
+              <a class="name" href="#">진요리사</a>
+              <span>7일전 발매!</span>
+            </div>
+            <div class="card_con">
+              <div class="img">
+                <img src="./img/sub/grade/card1/1.png" alt="game1" />
+                <div class="line_s"></div>
+              </div>
+              <a class="name" href="#">폴가이즈</a>
+              <span>오늘 발매!</span>
+            </div>
+            <div class="card_con">
+              <div class="img">
+                <img src="./img/sub/grade/card1/2.png" alt="game2" />
+                <div class="line_s"></div>
+              </div>
+              <a class="name" href="#">모여봐요!동물의 숲</a>
+              <span>1일전 발매!</span>
+            </div>
+            <div class="card_con">
+              <div class="img">
+                <img src="./img/sub/grade/card1/3.png" alt="game3" />
+                <div class="line_s"></div>
+              </div>
+              <a class="name" href="#">수박게임</a>
+              <span>4일전 발매!</span>
+            </div>
+            <div class="card_con">
+              <div class="img">
+                <img src="./img/sub/grade/card1/4.png" alt="game4" />
+                <div class="line_s"></div>
+              </div>
+              <a class="name" href="#">슈퍼 커비 헌터즈</a>
+              <span>4일전 발매!</span>
+            </div>
+            <div class="card_con">
+              <div class="img">
+                <img src="./img/sub/grade/card1/5.png" alt="game5" />
+                <div class="line_s"></div>
+              </div>
+              <a class="name" href="#">진요리사</a>
               <span>7일전 발매!</span>
             </div>
           </div>
@@ -231,7 +274,7 @@
                 <span>점</span>
               </div>
               <div class="name">
-                <h3>게임 타이틀 제목</h3>
+                <h3>크리소라이트</h3>
                 <span>탐험과 전투의 진정한 매력을 경험하세요!</span>
               </div>
               <div class="black"></div>
@@ -243,7 +286,7 @@
                 <span>점</span>
               </div>
               <div class="name">
-                <h3>게임 타이틀 제목</h3>
+                <h3>니드포스피드</h3>
                 <span>탐험과 전투의 진정한 매력을 경험하세요!</span>
               </div>
               <div class="black"></div>
@@ -297,7 +340,7 @@
                 <img src="./img/sub/grade/card3/1.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">젤다의 전설</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -306,7 +349,7 @@
                 <img src="./img/sub/grade/card3/2.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">마인크래프트</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -315,7 +358,7 @@
                 <img src="./img/sub/grade/card3/3.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">포트나이트</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -324,7 +367,7 @@
                 <img src="./img/sub/grade/card3/4.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">어몽어스</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -333,7 +376,7 @@
                 <img src="./img/sub/grade/card3/5.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">콜 오브 듀티</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -342,7 +385,7 @@
                 <img src="./img/sub/grade/card3/6.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">더 위쳐3</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -351,7 +394,7 @@
                 <img src="./img/sub/grade/card3/7.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">사이버펑크 2077</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -360,7 +403,7 @@
                 <img src="./img/sub/grade/card3/8.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">레드 데드 리뎀션2</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -369,7 +412,7 @@
                 <img src="./img/sub/grade/card3/9.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">에이펙스 레전드</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -378,7 +421,7 @@
                 <img src="./img/sub/grade/card3/10.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">그랜드 테프트 오토</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -387,7 +430,7 @@
                 <img src="./img/sub/grade/card3/11.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">오버워치</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -396,7 +439,7 @@
                 <img src="./img/sub/grade/card3/12.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">헤이디스</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -405,7 +448,7 @@
                 <img src="./img/sub/grade/card3/13.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">어쌔신 크리드 발할라</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -414,7 +457,7 @@
                 <img src="./img/sub/grade/card3/14.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">갓 오브 워</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -423,7 +466,7 @@
                 <img src="./img/sub/grade/card3/15.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">호라이즌 제로 던</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -432,7 +475,7 @@
                 <img src="./img/sub/grade/card3/16.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">도타2</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -441,7 +484,7 @@
                 <img src="./img/sub/grade/card3/17.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">리그 오브 레전드</a>
                 <span>24.7.4</span>
               </div>
             </div>
@@ -450,7 +493,7 @@
                 <img src="./img/sub/grade/card3/18.png" alt="game_title" />
               </div>
               <div>
-                <a class="name" href="#">게임 타이틀 제목</a>
+                <a class="name" href="#">발로란트</a>
                 <span>24.7.4</span>
               </div>
             </div>

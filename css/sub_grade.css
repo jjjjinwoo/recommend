@@ -13,7 +13,7 @@
   display: inline-block;
 }
 .title_s p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: #c2c2c2;
   display: inline-block;
@@ -83,8 +83,6 @@ header {
   transition: 0.3s;
 }
 .section1 div > a:nth-child(1) {
-  background-color: #222222;
-  color: white;
   border-radius: 50px 0 0 50px;
 }
 .section1 div > a:nth-child(2) {
@@ -100,7 +98,11 @@ header {
   left: -4px;
   border-radius: 0 50px 50px 0;
 }
-.section1 .hover:hover {
+.section1 div .is_on {
+  background-color: #222222;
+  color: white;
+}
+.section1 > div > a:hover {
   background-color: #f5f5f5;
 }
 
@@ -123,7 +125,7 @@ header {
   display: none;
 }
 .section2 .card_con {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
 }
 .section2 img {
@@ -322,7 +324,7 @@ header {
 }
 .section4 > p {
   color: #8b8b8b;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 90px;
 }
@@ -681,6 +683,10 @@ header {
   }
   .section2 .line {
     margin: 30px 0;
+  }
+  #gameList {
+    width: 720px;
+    margin: 0 auto;
   }
   .section3 {
     padding: 0 20px;

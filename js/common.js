@@ -69,7 +69,7 @@ $(document).ready(function () {
     dots: true,
     asNavFor: "#textSlide",
   });
-  $(".section2 .card_con").slick({
+  $(".section2 > .card_con").slick({
     slidesToShow: 4,
     responsive: [
       {
@@ -116,7 +116,7 @@ $(document).ready(function () {
       },
     ],
   });
-  $(".section5 .card_con").slick({
+  $(".section5 > .card_con").slick({
     slidesToShow: 3,
   });
   $("#textSlide").slick({
@@ -137,6 +137,11 @@ $(document).ready(function () {
     slidesToShow: 5,
     initialSlide: 6,
   });
+  $("#gameList").slick({
+    slidesToShow: 5,
+    arrows: false,
+    initialSlide: 5,
+  });
 });
 
 $("#main_control2").click(function () {
@@ -147,10 +152,10 @@ $("#main_control1").click(function () {
 });
 
 $(".section2 .next").click(function () {
-  $(".section2 .card_con").slick("slickNext");
+  $(".section2 > .card_con").slick("slickNext");
 });
 $(".section2 .prev").click(function () {
-  $(".section2 .card_con").slick("slickPrev");
+  $(".section2 > .card_con").slick("slickPrev");
 });
 
 $(".section5 .next").click(function () {
@@ -165,6 +170,13 @@ $(".game_schedule .next").click(function () {
 });
 $(".game_schedule .prev").click(function () {
   $("#gameSchedule").slick("slickPrev");
+});
+
+$(".game_list .next").click(function () {
+  $("#gameList").slick("slickNext");
+});
+$(".game_list .prev").click(function () {
+  $("#gameList").slick("slickPrev");
 });
 
 //카테고리 탭
