@@ -102,3 +102,27 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+/* 뉴스 서브페이지 */
+
+.hot_search .slick-slide {
+  position: relative;
+}
+
+#gameSchedule .slick-list {
+  margin: 0 -20px;
+}
+#gameSchedule .slick-slide {
+  margin: 0 20px;
+}
+
+/* 반응형 */
+
+@media screen and (max-width: 1024px) {
+  #gameSchedule .slick-list {
+    margin: 0 -10px;
+  }
+  #gameSchedule .slick-slide {
+    margin: 0 10px;
+  }
+}

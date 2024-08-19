@@ -1031,7 +1031,8 @@
     line-height: 50px;
   }
   .section1 .text {
-    top: auto;
+    left: 40px;
+    top: 510px;
     margin-bottom: 28px;
   }
   .section1 .text .up {
@@ -1374,6 +1375,7 @@
   }
   .section1 .text {
     top: auto;
+    bottom: -132px;
     margin-bottom: 28px;
   }
   .section1 .text .up {

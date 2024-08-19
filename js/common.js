@@ -125,6 +125,18 @@ $(document).ready(function () {
     fade: true,
     asNavFor: ".slide",
   });
+  $(".hot_search").slick({
+    vertical: true,
+    autoplay: true,
+    arrows: false,
+    draggable: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+  });
+  $("#gameSchedule").slick({
+    slidesToShow: 5,
+    initialSlide: 6,
+  });
 });
 
 $("#main_control2").click(function () {
@@ -147,3 +159,24 @@ $(".section5 .next").click(function () {
 $(".section5 .prev").click(function () {
   $(".section5 .card_con").slick("slickPrev");
 });
+
+$(".game_schedule .next").click(function () {
+  $("#gameSchedule").slick("slickNext");
+});
+$(".game_schedule .prev").click(function () {
+  $("#gameSchedule").slick("slickPrev");
+});
+
+//카테고리 탭
+
+const tabList = document.querySelectorAll("#category div a");
+
+for (var i = 0; i < tabList.length; i++) {
+  tabList[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    for (var j = 0; j < tabList.length; j++) {
+      tabList[j].classList.remove("is_on");
+    }
+    this.classList.add("is_on");
+  });
+}
