@@ -3,28 +3,24 @@
 // 슬라이드 이벤트
 
 const title2 = document.querySelector(".section2 .title");
-const cardCon2_1 = document.querySelector("#cardCon2_1");
-const cardCon2_2 = document.querySelector("#cardCon2_2");
-const cardCon2_3 = document.querySelector("#cardCon2_3");
-const cardCon2_4 = document.querySelector("#cardCon2_4");
+const cardCon2s = [
+  document.querySelector("#cardCon2_1"),
+  document.querySelector("#cardCon2_2"),
+  document.querySelector("#cardCon2_3"),
+  document.querySelector("#cardCon2_4"),
+];
 
-console.log(document.querySelector(".section2 .card:nth-child(13)"));
+let hasScrolled = false;
 
 document.addEventListener("scroll", () => {
-  if (window.scrollY > 700) {
+  if (window.scrollY > 700 && !hasScrolled) {
+    hasScrolled = true;
     title2.classList.add("scrollArrive");
-    setTimeout(function () {
-      cardCon2_1.classList.add("scrollArrive");
-    }, 200);
-    setTimeout(function () {
-      cardCon2_2.classList.add("scrollArrive");
-    }, 400);
-    setTimeout(function () {
-      cardCon2_3.classList.add("scrollArrive");
-    }, 600);
-    setTimeout(function () {
-      cardCon2_4.classList.add("scrollArrive");
-    }, 800);
+    cardCon2s.forEach((card, index) => {
+      setTimeout(() => {
+        card.classList.add("scrollArrive");
+      }, index * 200);
+    });
   }
 });
 

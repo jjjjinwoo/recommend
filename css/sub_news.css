@@ -466,6 +466,9 @@ header {
   background-color: #222222;
   display: flex;
   flex-direction: column;
+  background-image: url(../img/sub/news/logo_w.svg);
+  background-repeat: no-repeat;
+  background-position: 96px -55px;
 }
 #gameSchedule .on {
   background-color: white;
