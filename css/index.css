@@ -171,24 +171,20 @@
   right: 150px;
   opacity: 50%;
   transition: 0.5s;
-  animation-name: scroll_down;
-  animation-duration: 3s;
+  animation-name: upDown;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   z-index: 100;
 }
-@keyframes scroll_down {
+@keyframes upDown {
   0% {
-    opacity: 50%;
+    transform: translateY(0px);
   }
-  20% {
-    opacity: 0%;
+  50% {
+    transform: translateY(10px);
   }
-  40% {
-    opacity: 50%;
-  }
-
-  to {
-    opacity: 50%;
+  100% {
+    transform: translateY(0px);
   }
 }
 .section1 .fake {
