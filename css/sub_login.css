@@ -87,6 +87,11 @@ form .down > div {
   cursor: pointer;
   margin-right: 10px;
 }
+#auto_login:checked + label {
+  background-image: url(../img/sub/login/checkbox.png);
+  border: none;
+  border: 1px solid white;
+}
 form .down .line {
   width: 1px;
   height: 10px;
