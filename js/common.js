@@ -10,21 +10,16 @@ window.onload = function () {
 
 // 언어 지원
 
-const langMenu = document.querySelector("#lang_list");
+const langMenu = document.querySelector("#lang_menu");
+const langList = document.querySelector("#lang_list");
 
-let l = 0;
+langMenu.addEventListener("focus", function () {
+  langList.style.display = "flex";
+});
 
-function on() {
-  if (l) {
-    langMenu.style.display = "flex";
-    l++;
-  } else {
-    langMenu.style.display = "none";
-    l--;
-  }
-
-  return;
-}
+langMenu.addEventListener("blur", function () {
+  langList.style.display = "none";
+});
 
 // 모바일 서브메뉴
 let subMenu = document.querySelector(".sub_menu_m");

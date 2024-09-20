@@ -239,6 +239,9 @@ a {
   height: 36px;
   background-color: #ffca0f;
 }
+h1 {
+  cursor: pointer;
+}
 h3 {
   font-size: 26px;
   font-weight: 800;
@@ -259,6 +262,11 @@ h3 {
   font-size: 0;
   border: none;
   cursor: pointer;
+}
+button {
+  font-family: "NanumSquare", sans-serif;
+  background-color: transparent;
+  border: none;
 }
 
 /* Header 영역 */
@@ -301,11 +309,14 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.header_up #lang_menu,
 .header_up a {
   cursor: pointer;
   color: white;
   transition: 0.3s;
+  font-size: 14px;
 }
+.header_up #lang_menu:hover,
 .header_up a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
