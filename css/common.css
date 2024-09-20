@@ -285,15 +285,19 @@ header {
   padding: 0 8.5vw;
   box-sizing: border-box;
 }
-.header_up ul {
-  width: 100%;
-}
-.header_up li {
+.header_up .left {
   line-height: 32px;
   font-size: 14px;
   position: relative;
 }
-.header_up ul {
+.header_up .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+}
+.header_up .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -338,7 +342,7 @@ header {
 
 /* Header_down */
 
-.header_down > ul {
+.header_down > .container {
   width: 100%;
   height: 86px;
   background-color: rgba(255, 255, 255);
@@ -394,14 +398,14 @@ header .icon_notification_m {
 header .icon_menu_m {
   background-image: url(../img/main/icon/menu_m.svg);
 }
-.header_down ul > .hm {
+.header_down .container > .hm {
   display: flex;
   justify-content: flex-start;
   align-content: center;
   gap: 53px;
   transition: 0.5s;
 }
-.header_down:hover ul > .hm {
+.header_down:hover .container > .hm {
   gap: 70px;
 }
 .header_down .line {
@@ -666,10 +670,10 @@ footer .right > div {
   header h1 img {
     height: 32px;
   }
-  .header_down ul > .hm {
+  .header_down .container > .hm {
     gap: 34px;
   }
-  .header_down:hover ul > .hm {
+  .header_down:hover .container > .hm {
     gap: 34px;
   }
   .header_down .hm .text {
@@ -778,14 +782,14 @@ footer .right > div {
     display: none;
   }
   .header_up,
-  .header_down > ul {
+  .header_down > .container {
     padding: 0 20px;
   }
-  .header_down > ul {
+  .header_down > .container {
     height: 74px;
     border-bottom: none;
   }
-  .header_down > ul > .hm {
+  .header_down > .container > .hm {
     display: none;
   }
   header .icon {
@@ -870,13 +874,13 @@ footer .right > div {
     display: none;
   }
   .header_up,
-  .header_down > ul {
+  .header_down > .container {
     padding: 0 20px;
   }
-  .header_down > ul {
+  .header_down > .container {
     height: 74px;
   }
-  .header_down > ul > .hm {
+  .header_down > .container > .hm {
     display: none;
   }
   header .icon {
@@ -890,7 +894,7 @@ footer .right > div {
   header .icon a:nth-child(4) {
     display: block;
   }
-  .header_down > ul {
+  .header_down > .container {
     border-bottom: none;
   }
   .header_con {
