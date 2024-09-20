@@ -461,8 +461,8 @@
   font-size: 0;
   display: block;
 }
-#critic_bar::before {
-  width: 90px;
+.bar.critic::before {
+  width: 90px !important;
 }
 
 /* section3 */
